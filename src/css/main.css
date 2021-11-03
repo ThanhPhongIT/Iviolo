@@ -7,27 +7,52 @@
   border: 0;
   font-size: 100%; }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+@font-face {
+  font-family: Regular;
+  src: url("../../fonts/SVNGilroyRegular.otf") format("opentype"); }
+
+@font-face {
+  font-family: Regular;
+  src: url("../../fonts/SVNGilroyBold.otf") format("opentype");
+  font-weight: bold; }
+
+body {
+  font-family: Regular, sans-serif !important; }
 
 html {
   line-height: 1.15;
@@ -193,3 +218,224 @@ body {
 a {
   color: #007bff;
   font-size: 16px; }
+
+.wrapper-login {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../images/background-login.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .wrapper-login .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1120px;
+    height: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(-50%, -50%); }
+    .wrapper-login .content .left {
+      width: 660px;
+      height: 100%;
+      border-radius: 18px 0 0 18px;
+      background-image: url("../../../images/login-left.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 63px;
+      padding-left: 96px; }
+      .wrapper-login .content .left .heading {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 67px;
+        color: #000000;
+        margin-bottom: 16px; }
+      .wrapper-login .content .left .des {
+        margin-bottom: 36px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 112%;
+        color: #2a2c34;
+        width: 80%; }
+      .wrapper-login .content .left a.sign-up {
+        width: 170.67px;
+        height: 48px;
+        border: 2px solid #a5a6f6;
+        box-sizing: border-box;
+        border-radius: 14px;
+        font-style: normal;
+        background: transparent;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #a5a6f6;
+        justify-content: center; }
+        .wrapper-login .content .left a.sign-up:hover {
+          text-decoration: none; }
+    .wrapper-login .content .right {
+      width: 460px;
+      background: #ffffff;
+      opacity: 0.72;
+      border-radius: 0 18px 18px 0;
+      height: 100%;
+      padding-top: 43px;
+      padding-left: 32px;
+      padding-right: 96px; }
+      .wrapper-login .content .right .title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 38px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        padding-bottom: 12px; }
+      .wrapper-login .content .right .des {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #2a2c34;
+        padding-bottom: 32px; }
+        .wrapper-login .content .right .des a {
+          color: #1ecbc1; }
+      .wrapper-login .content .right form .form-group label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #2a2c34;
+        margin-bottom: 8px; }
+      .wrapper-login .content .right form .form-group input {
+        background: #ffffff !important;
+        border: 1px solid rgba(200, 204, 217, 0.32);
+        box-sizing: border-box;
+        border-radius: 8px;
+        width: 352px;
+        height: 50px; }
+      .wrapper-login .content .right form .foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .wrapper-login .content .right form .foot .form-check {
+          display: flex;
+          align-items: center; }
+          .wrapper-login .content .right form .foot .form-check .form-check-input {
+            margin-top: 0; }
+          .wrapper-login .content .right form .foot .form-check .form-check-label {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 15px;
+            /* identical to box height */
+            display: flex;
+            align-items: flex-end;
+            /* Color 2 */
+            color: #969eb4; }
+        .wrapper-login .content .right form .foot .forgot {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 17px;
+          display: flex;
+          align-items: center;
+          color: #1ecbc1; }
+      .wrapper-login .content .right form .gender {
+        display: flex;
+        align-items: center;
+        /* Hide the browser's default radio button */
+        /* Create a custom radio button */
+        /* On mouse-over, add a grey background color */
+        /* When the radio button is checked, add a blue background */
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        /* Show the indicator (dot/circle) when checked */
+        /* Style the indicator (dot/circle) */ }
+        .wrapper-login .content .right form .gender .custom {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 14px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          margin-right: 20px; }
+        .wrapper-login .content .right form .gender .custom input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer; }
+        .wrapper-login .content .right form .gender .checkmark {
+          position: absolute;
+          top: -1px;
+          left: 8px;
+          left: 0;
+          height: 18px;
+          width: 18px;
+          background-color: transparent;
+          border: 1px solid #969eb4;
+          border-radius: 50%; }
+        .wrapper-login .content .right form .gender .custom:hover input ~ .checkmark {
+          background-color: #ccc; }
+        .wrapper-login .content .right form .gender .custom input:checked ~ .checkmark {
+          background-color: #fff; }
+        .wrapper-login .content .right form .gender .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none; }
+        .wrapper-login .content .right form .gender .custom input:checked ~ .checkmark:after {
+          display: block; }
+        .wrapper-login .content .right form .gender .custom .checkmark:after {
+          top: 2px;
+          left: 2px;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: linear-gradient(0deg, #009efd 0%, #2af598 100%); }
+      .wrapper-login .content .right form .foot-signup {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
+        .wrapper-login .content .right form .foot-signup .form-check {
+          display: flex;
+          align-items: center;
+          margin-top: 24px; }
+          .wrapper-login .content .right form .foot-signup .form-check .form-check-input {
+            margin-top: 0; }
+          .wrapper-login .content .right form .foot-signup .form-check .form-check-label {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 15px;
+            /* identical to box height */
+            display: flex;
+            align-items: flex-end;
+            /* Color 2 */
+            color: #969eb4; }
+      .wrapper-login .content .right form button.bt-login {
+        width: 352px;
+        height: 50px;
+        left: 832px;
+        background: linear-gradient(0deg, #009efd 0%, #2af598 100%);
+        border-radius: 8px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        margin-top: 32px;
+        justify-content: center; }
