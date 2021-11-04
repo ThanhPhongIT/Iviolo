@@ -1,9 +1,41 @@
-.header
-   .container
-      .logo
-         img(src="", alt="logo")
-      .header__menu
-         ul.menu-left
-            li Trang chủ
-            li Quán ăn
-            li Liên hệ
+header
+  .container
+    .header 
+      .col-left 
+        .logo
+          a(href="#")
+            img(src="./images/logo.png", alt="logo") 
+        .box-search 
+          input(type="text", name="", placeholder="Search")
+          img(src="./images/icon-search.png", alt="")
+      .col-center 
+        ul.header__menu
+            li.active
+              a(href="#") 
+                img(src="./images/icon-home.png", alt="")
+                img.active(src="./images/icon-home-active.png", alt="")
+            li
+              a(href="#") 
+                img(src="./images/icon-location.png", alt="")
+                img.active(src="./images/icon-location-active.png", alt="")
+            li
+              a(href="#") 
+                img(src="./images/icon-food.png", alt="")
+                img.active(src="./images/icon-food-active.png", alt="")
+            li
+              a(href="#") 
+                img(src="./images/icon-profile.png", alt="")
+                img.active(src="./images/icon-profile-active.png", alt="")
+      .col-right 
+        ul.header__option 
+          li
+            a.create-post(href="#")
+              img(src="./images/icon-edit.png", alt="")
+              span post
+          li 
+            a(href="#")
+              img(src="./images/icon-notifications.png", alt="") 
+          li
+            a.box-language(href="#")
+              img(src="./images/icon-language.png", alt="") 
+              span EN

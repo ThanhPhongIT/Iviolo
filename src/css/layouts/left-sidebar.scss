@@ -1,0 +1,24 @@
+.left-sidebar{
+    padding: 16px 0 0 16px;
+    li{
+        height: 64px;
+        border-radius: 32px;
+        padding: 13px 0 13px 15px;
+        a{
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            line-height: 19px;
+            color: #676262;
+            font-family: SVNGilroy-Regular;
+            img{
+                margin-right: 18px;
+            }
+        }
+        &.active{
+            a{
+                font-family: SVN-Gilroy-SemiBold;
+            }
+        }
+    }
+}

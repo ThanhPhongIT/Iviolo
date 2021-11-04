@@ -27,3 +27,25 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Segoe UI Symbol";
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace;
+
+
+// 400
+@font-face {
+  font-family: SVNGilroy-Regular;
+  src: url(./../../fonts/SVNGilroyRegular.otf);
+}
+// 700
+@font-face {
+  font-family: SVNGilroy-Bold;
+  src: url(./../../fonts/SVNGilroyBold.otf);
+}
+// 600
+@font-face {
+  font-family: SVN-Gilroy-SemiBold;
+  src: url(./../../fonts/SVN-Gilroy-SemiBold.otf);
+}
+// 500
+@font-face {
+  font-family: SVN-Gilroy-Medium;
+  src: url(./../../fonts/SVN-Gilroy-Medium.otf);
+}

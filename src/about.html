@@ -7,19 +7,55 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title></title>
   </head>
-  <body> 
-    <div class="header">
+  <body>
+    <header>
       <div class="container">
-        <div class="logo"><img src="" alt="logo"></div>
-        <div class="header__menu">
-          <ul class="menu-left">
-            <li>Trang chủ</li>
-            <li>Quán ăn</li>
-            <li>Liên hệ</li>
-          </ul>
+        <div class="header"> 
+          <div class="col-left"> 
+            <div class="logo"><a href="#"><img src="./images/logo.png" alt="logo"></a></div>
+            <div class="box-search"> 
+              <input type="text" name="" placeholder="Search"><img src="./images/icon-search.png" alt="">
+            </div>
+          </div>
+          <div class="col-center"> 
+            <ul class="header__menu">
+              <li class="active"><a href="#"> <img src="./images/icon-home.png" alt=""><img class="active" src="./images/icon-home-active.png" alt=""></a></li>
+              <li><a href="#"> <img src="./images/icon-location.png" alt=""><img class="active" src="./images/icon-location-active.png" alt=""></a></li>
+              <li><a href="#"> <img src="./images/icon-food.png" alt=""><img class="active" src="./images/icon-food-active.png" alt=""></a></li>
+              <li><a href="#"> <img src="./images/icon-profile.png" alt=""><img class="active" src="./images/icon-profile-active.png" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="col-right"> 
+            <ul class="header__option"> 
+              <li><a class="create-post" href="#"><img src="./images/icon-edit.png" alt=""><span>post</span></a></li>
+              <li> <a href="#"><img src="./images/icon-notifications.png" alt=""></a></li>
+              <li><a class="box-language" href="#"><img src="./images/icon-language.png" alt=""><span>EN</span></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
+    <main class="container">
+      <ul class="left-sidebar">
+        <li class="active"><a href="#"> <img src="./images/icon-nav-user.png" alt=""><span>Your name</span></a></li>
+        <li> <a href="#"> <img src="./images/icon-nav-post.png" alt=""><span>My post</span></a></li>
+        <li> <a href="#"> <img src="./images/icon-nav-address.png" alt=""><span>Saved location</span></a></li>
+        <li> <a href="#"> <img src="./images/icon-nav-create.png" alt=""><span>Create schedule</span></a></li>
+        <li> <a href="#"> <img src="./images/icon-nav-ship.png" alt=""><span>Shipping</span></a></li>
+        <li> <a href="#"> <img src="./images/icon-nav-booked.png" alt=""><span>Booked place</span></a></li>
+        <li> <a href="#"> <img src="./images/icon-nav-discount.png" alt=""><span>Coupon management</span></a></li>
+        <li> <a href="#"> <img src="./images/icon-nav-review.png" alt=""><span>Review the place</span></a></li>
+        <li> <a href="#"> <img src="./images/icon-nav-logout.png" alt=""><span>Sign out</span></a></li>
+      </ul>
+      <div class="main-content"> 
+      </div>
+      <div class="right-filter"> 
+        <p class="title-filter">Filter setting</p>
+        <div class="filter-price"> 
+          <p class="title">Price range</p>
+        </div>
+      </div>
+    </main>
     <footer id="footer">
       <p>Copyright (c) foobar</p>
     </footer>
