@@ -249,15 +249,16 @@ body {
     padding-right: 15px; }
 
 header {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 8px 1px 6px rgba(200, 204, 217, 0.4); }
-  header .container {
+  header .container-fluid {
     padding: 11px 32px 11px 16px; }
   header .header {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    header .header .col-left, header .header .col-right {
+    header .header .col-left,
+    header .header .col-right {
       width: 320px; }
     header .header .col-left {
       display: flex;
@@ -269,8 +270,8 @@ header {
       header .header .col-left .box-search {
         position: relative; }
         header .header .col-left .box-search input {
-          background: #EFF8FE;
-          border: 1px solid #EFF8FE;
+          background: #eff8fe;
+          border: 1px solid #eff8fe;
           box-sizing: border-box;
           border-radius: 16px;
           height: 32px;
@@ -283,7 +284,7 @@ header {
           color: #000;
           font-family: SVNGilroy-Regular; }
           header .header .col-left .box-search input::placeholder {
-            color: #C8CCD9; }
+            color: #c8ccd9; }
         header .header .col-left .box-search img {
           position: absolute;
           top: 50%;
@@ -327,7 +328,7 @@ header {
       header .header .col-right .header__option li {
         margin: 0 24px; }
         header .header .col-right .header__option li .create-post {
-          background: #1ECBC1;
+          background: #1ecbc1;
           border-radius: 16px;
           font-family: SVN-Gilroy-Medium;
           font-size: 14px;
