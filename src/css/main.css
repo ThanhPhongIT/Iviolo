@@ -1,3 +1,13 @@
+body {
+  font-family: SVNGilroy-Regular; }
+
+@font-face {
+  font-family: SVNGilroy-Regular;
+  src: url(./../../fonts/SVNGilroyRegular.otf); }
+
+a:hover {
+  text-decoration: none; }
+
 *,
 *::before,
 *::after {
@@ -42,6 +52,9 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+label {
+  margin: 0; }
 
 @font-face {
   font-family: Regular;
@@ -201,56 +214,21 @@ template {
 [hidden] {
   display: none; }
 
-a:hover {
-  text-decoration: none; }
-
-@font-face {
-  font-family: SVNGilroy-Regular;
-  src: url(./../../fonts/SVNGilroyRegular.otf); }
-
-@font-face {
-  font-family: SVNGilroy-Bold;
-  src: url(./../../fonts/SVNGilroyBold.otf); }
-
-@font-face {
-  font-family: SVN-Gilroy-SemiBold;
-  src: url(./../../fonts/SVN-Gilroy-SemiBold.otf); }
-
-@font-face {
-  font-family: SVN-Gilroy-Medium;
-  src: url(./../../fonts/SVN-Gilroy-Medium.otf); }
-
-.container {
-  width: 100%;
-  max-width: 1440px; }
-
-main {
-  display: flex;
-  justify-content: space-between; }
-  main .left-sidebar, main .right-filter {
-    width: 320px; }
-  main .main-content {
-    width: calc(100% - 320px - 320px);
-    background: #F9FAFF; }
-
-body {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-  body:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.menu-left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none; }
-  .menu-left li {
-    padding-right: 15px; }
+body:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 header {
   background: #ffffff;
-  box-shadow: 8px 1px 6px rgba(200, 204, 217, 0.4); }
+  box-shadow: 8px 1px 6px rgba(200, 204, 217, 0.4);
+  height: 54px;
+  overflow: hidden;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
   header .container-fluid {
     padding: 11px 32px 11px 16px; }
   header .header {
@@ -262,11 +240,11 @@ header {
       width: 320px; }
     header .header .col-left {
       display: flex;
-      align-items: center;
-      justify-content: space-between; }
+      align-items: center; }
       header .header .col-left .logo img {
         width: 100%;
-        max-width: 88px; }
+        max-width: 88px;
+        margin-right: 18px; }
       header .header .col-left .box-search {
         position: relative; }
         header .header .col-left .box-search input {
@@ -281,8 +259,7 @@ header {
           letter-spacing: -0.01em;
           font-size: 16px;
           line-height: 20px;
-          color: #000;
-          font-family: SVNGilroy-Regular; }
+          color: #000; }
           header .header .col-left .box-search input::placeholder {
             color: #c8ccd9; }
         header .header .col-left .box-search img {
@@ -314,13 +291,13 @@ header {
             transform: translate(-50%, -50%); }
             header .header .col-center .header__menu li img.active {
               opacity: 0;
-              z-index: -1; }
-          header .header .col-center .header__menu li.active img {
+              transition: all 0.5s; }
+          header .header .col-center .header__menu li.active img, header .header .col-center .header__menu li a:hover img {
             opacity: 0;
-            z-index: -1; }
-            header .header .col-center .header__menu li.active img.active {
+            transition: all 0.5s; }
+            header .header .col-center .header__menu li.active img.active, header .header .col-center .header__menu li a:hover img.active {
               opacity: 1 !important;
-              z-index: 1 !important; }
+              transition: all 0.5s; }
     header .header .col-right .header__option {
       display: flex;
       align-items: center;
@@ -330,7 +307,7 @@ header {
         header .header .col-right .header__option li .create-post {
           background: #1ecbc1;
           border-radius: 16px;
-          font-family: SVN-Gilroy-Medium;
+          font-weight: 500;
           font-size: 14px;
           line-height: 15px;
           padding: 7px 17px;
@@ -346,7 +323,7 @@ header {
           align-items: center;
           font-size: 16px;
           line-height: 17px;
-          font-family: SVNGilroy-Bold;
+          font-weight: 600;
           color: #676262; }
           header .header .col-right .header__option li .box-language img {
             margin-right: 10px; }
@@ -355,8 +332,15 @@ a {
   color: #007bff;
   font-size: 16px; }
 
+.icon-mess {
+  position: fixed;
+  bottom: 47px;
+  right: 47px;
+  z-index: 10;
+  cursor: pointer; }
+
 .left-sidebar {
-  padding: 16px 0 0 16px; }
+  padding: 16px; }
   .left-sidebar li {
     height: 64px;
     border-radius: 32px;
@@ -366,15 +350,89 @@ a {
       align-items: center;
       font-size: 18px;
       line-height: 19px;
-      color: #676262;
-      font-family: SVNGilroy-Regular; }
+      color: #676262; }
       .left-sidebar li a img {
         margin-right: 18px; }
     .left-sidebar li.active a {
-      font-family: SVN-Gilroy-SemiBold; }
+      font-weight: 600; }
 
 .right-filter {
-  padding: 16px 0 0 16px; }
+  padding: 16px; }
+  .right-filter .title-filter {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 33px; }
+  .right-filter p.title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 24px; }
+  .right-filter .filter-price {
+    margin-bottom: 85px; }
+    .right-filter .filter-price p.title {
+      margin-bottom: 42px; }
+    .right-filter .filter-price .progres-sprice {
+      position: relative;
+      background: rgba(200, 204, 217, 0.32);
+      height: 2px;
+      width: 100%; }
+      .right-filter .filter-price .progres-sprice .progres-sprice_width {
+        position: relative;
+        background: linear-gradient(0deg, #009EFD 0%, #2AF598 100%);
+        width: calc(65% + 7px);
+        height: 2px;
+        left: calc(10% + 7px); }
+      .right-filter .filter-price .progres-sprice .progres-sprice_before {
+        position: absolute;
+        top: 0;
+        height: 50px;
+        left: 10%; }
+      .right-filter .filter-price .progres-sprice .progres-sprice_after {
+        position: absolute;
+        top: 0;
+        height: 50px;
+        left: 75%; }
+      .right-filter .filter-price .progres-sprice .dot {
+        background: linear-gradient(0deg, #009EFD 0%, #2AF598 100%);
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
+        top: -7px; }
+  .right-filter .filter-review .box-review {
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(200, 204, 217, 0.32);
+    margin-bottom: 33px; }
+    .right-filter .filter-review .box-review img {
+      margin-right: 8px; }
+      .right-filter .filter-review .box-review img:last-child {
+        margin: 0; }
+  .right-filter .filter-checkbox .list-checkbox li {
+    margin-bottom: 12px;
+    height: 18px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    color: #676262;
+    display: flex;
+    align-items: center; }
+    .right-filter .filter-checkbox .list-checkbox li input {
+      margin-right: 14px; }
+  .right-filter .filter-checkbox .show-more {
+    padding: 6px 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    color: #2A2C34;
+    cursor: pointer; }
+    .right-filter .filter-checkbox .show-more img {
+      margin-left: 9px; }
 
 .wrapper-login {
   width: 100vw;
@@ -596,3 +654,32 @@ a {
         color: #ffffff;
         margin-top: 32px;
         justify-content: center; }
+
+.container {
+  width: 100%;
+  max-width: 1440px; }
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important; }
+  main .left-sidebar {
+    width: 320px;
+    position: fixed;
+    min-height: 100vh;
+    top: 54px;
+    left: 0;
+    z-index: 1; }
+  main .right-filter {
+    width: 320px;
+    position: fixed;
+    min-height: 100vh;
+    top: 54px;
+    right: 0;
+    z-index: 1; }
+  main .main-content {
+    width: calc(100% - 320px - 320px);
+    background: #F9FAFF;
+    margin: 0 auto;
+    min-height: 100vh;
+    margin-top: 54px; }

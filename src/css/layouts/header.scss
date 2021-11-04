@@ -1,19 +1,17 @@
 body {
-  font-family: $font-family-monospace;
   @include clearfix;
-}
-
-.menu-left {
-  @include flex-center;
-  list-style: none;
-  li {
-    padding-right: 15px;
-  }
 }
 
 header {
   background: #ffffff;
   box-shadow: 8px 1px 6px rgba(200, 204, 217, 0.4);
+  height: 54px;
+  overflow: hidden;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   .container-fluid {
     padding: 11px 32px 11px 16px;
   }
@@ -28,11 +26,11 @@ header {
     .col-left {
       display: flex;
       align-items: center;
-      justify-content: space-between;
       .logo {
         img {
           width: 100%;
           max-width: 88px;
+          margin-right: 18px;
         }
       }
       .box-search {
@@ -50,7 +48,6 @@ header {
           font-size: 16px;
           line-height: 20px;
           color: #000;
-          font-family: SVNGilroy-Regular;
           &::placeholder {
             color: #c8ccd9;
           }
@@ -88,16 +85,16 @@ header {
             transform: translate(-50%, -50%);
             &.active {
               opacity: 0;
-              z-index: -1;
+              transition: all 0.5s;
             }
           }
-          &.active {
+          &.active, a:hover {
             img {
               opacity: 0;
-              z-index: -1;
+              transition: all 0.5s;
               &.active {
                 opacity: 1 !important;
-                z-index: 1 !important;
+                transition: all 0.5s;
               }
             }
           }
@@ -113,7 +110,7 @@ header {
           .create-post {
             background: #1ecbc1;
             border-radius: 16px;
-            font-family: SVN-Gilroy-Medium;
+            font-weight: 500;
             font-size: 14px;
             line-height: 15px;
             padding: 7px 17px;
@@ -133,7 +130,7 @@ header {
             align-items: center;
             font-size: 16px;
             line-height: 17px;
-            font-family: SVNGilroy-Bold;
+            font-weight: 600;
             color: #676262;
             img {
               margin-right: 10px;

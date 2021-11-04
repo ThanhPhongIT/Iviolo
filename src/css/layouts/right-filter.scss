@@ -1,3 +1,100 @@
 .right-filter{
-    padding: 16px 0 0 16px;
+    padding: 16px;
+    .title-filter{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 19px;
+        color: #000000;
+        margin-bottom: 33px;
+    }
+    p.title{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 17px;
+        color: #000000;
+        margin-bottom: 24px;
+    }
+    .filter-price{
+        margin-bottom: 85px;
+        p.title{
+            margin-bottom: 42px;
+        }
+        .progres-sprice{
+            position: relative;
+            background: rgba(200, 204, 217, 0.32);
+            height: 2px;
+            width: 100%;
+            .progres-sprice_width{
+                position: relative;
+                background: linear-gradient(0deg, #009EFD 0%, #2AF598 100%);
+                width: calc(65% + 7px); // (left of progres-sprice_after - left of progres-sprice_before) + 7px
+                height: 2px;
+                left: calc(10% + 7px); // left of progres-sprice_after
+            }
+            .progres-sprice_before{
+                position: absolute;
+                top: 0;
+                height: 50px;
+                left: 10%;
+            }
+            .progres-sprice_after{
+                position: absolute;
+                top: 0;
+                height: 50px;
+                left: 75%;
+            }
+            .dot{
+                background: linear-gradient(0deg, #009EFD 0%, #2AF598 100%);
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                margin: 0 auto;
+                position: relative;
+                top: -7px;
+            }
+        }
+    }
+    .filter-review{
+        .box-review{
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(200, 204, 217, 0.32);
+            margin-bottom: 33px;
+            img{
+                margin-right: 8px;
+                &:last-child{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .filter-checkbox{
+        .list-checkbox{
+            li{
+                margin-bottom: 12px;
+                height: 18px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 16px;
+                color: #676262;
+                display: flex;
+                align-items: center;
+                input{
+                    margin-right: 14px;
+                }
+            }
+        }
+        .show-more{
+            padding: 6px 0;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 13px;
+            display: flex;
+            align-items: center;
+            color: #2A2C34;
+            cursor: pointer;
+            img{
+                margin-left: 9px;
+            }
+        }
+    }
 }

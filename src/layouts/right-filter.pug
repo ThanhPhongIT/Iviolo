@@ -1,4 +1,43 @@
 .right-filter 
-    p.title-filter Filter setting
-    .filter-price 
-        p.title Price range
+	p.title-filter Filter setting
+	.filter-price 
+			p.title Price range
+			.progres-sprice
+				.progres-sprice_width 
+				.progres-sprice_before
+					.dot
+					span $50
+				.progres-sprice_after
+					.dot
+					span $1200
+
+	.filter-review 
+		p.title Rating
+		.box-review 
+			img(src="./images/icon-review-star-active.png", alt="")
+			img(src="./images/icon-review-star-active.png", alt="")
+			img(src="./images/icon-review-star-active.png", alt="")
+			img(src="./images/icon-review-star-active.png", alt="")
+			img(src="./images/icon-review-star.png", alt="")
+	
+	.filter-checkbox 
+		p.title Establishment Type
+		ul.list-checkbox 
+			li 
+				input(type="checkbox", name="" id="Restaurants")
+				label(for="Restaurants") Restaurants
+			li 
+				input(type="checkbox", name="" id="Quick Bites")
+				label(for="Quick Bites") Quick Bites
+			li 
+				input(type="checkbox", name="" id="Dessert")
+				label(for="Dessert") Dessert
+			li 
+				input(type="checkbox", name="" id="Coffee & Tea")
+				label(for="Coffee & Tea") Coffee & Tea
+			li 
+				input(type="checkbox", name="" id="Bars & Pubs")
+				label(for="Bars & Pubs") Bars & Pubs
+		.show-more 
+			span Show more
+			img(src="./images/icon-arrow-down.png", alt="")

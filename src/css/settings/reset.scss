@@ -44,6 +44,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+label{
+  margin: 0;
+}
 @font-face {
   font-family: Regular;
   src: url("../../fonts/SVNGilroyRegular.otf") format("opentype");
