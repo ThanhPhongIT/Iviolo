@@ -1,0 +1,52 @@
+.wrapper-pro-cont
+	.top
+		.heading Hồ sơ và hiển thị
+		.info
+			ul.list-info
+				li.item 
+					img(src="./images/profile/post.jpg", alt="")
+					.left 
+						.des Bài viết 
+						.quan 3
+				li.item 
+					img(src="./images/profile/voucher.jpg", alt="")
+					.left 
+						.des Voucher 
+						.quan 3
+				li.item 
+					img(src="./images/profile/arrived.jpg", alt="")
+					.left 
+						.des Đã đi 
+						.quan 3
+				li.item 
+					img(src="./images/profile/tour.jpg", alt="")
+					.left 
+						.des Lịch trình
+						.quan 3
+	.bottom
+		.heading Thông tin tài khoản
+		form
+			.form-item
+				label Tên:
+				input(type="text")
+			.form-item
+				label Tên tài khoản: 
+				input(type="text")
+			.form-item
+				label Email: 
+				input(type="text")
+			.form-item
+				label Thông tin liên hệ: 
+				input(type="text")
+			.gender-custom
+				label Giới tính 
+				.gender
+					label.custom
+						input(type="radio" checked="checked" name="radio")
+						span.checkmark 
+						| Nam
+					label.custom
+						input(type="radio" name="radio")
+						span.checkmark 
+						| Nữ
+			button(type="submit") Save

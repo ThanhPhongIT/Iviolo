@@ -1,0 +1,199 @@
+.wrapper-pro-cont {
+  margin: 0 32px;
+  .top {
+    .heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 21px;
+
+      color: #1ecbc1;
+      width: 100%;
+      padding: 40px 0 24px 0;
+      border-bottom: 0.6px solid #c8ccd9;
+    }
+
+    .info {
+      margin: 12px 0 28px 0;
+      .list-info {
+        display: flex;
+        align-items: center;
+      }
+      .item {
+        width: 177px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e6e0e6;
+        margin-right: 9px;
+        border-radius: 10px;
+        img {
+          padding-right: 27px;
+        }
+        .left {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          .des {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 21px;
+            color: #4c99ac;
+            padding-bottom: 8px;
+          }
+          .quan {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 26px;
+            color: #4c99ac;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    padding-top: 22px;
+    padding-left: 28px;
+    .heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 21px;
+      color: #1ecbc1;
+      padding-bottom: 26px;
+    }
+    form {
+      button {
+        width: 677px;
+        height: 46px;
+        background: #1ecbc1;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-top: 46px;
+        color: #ffffff;
+        &:focus {
+          outline: none;
+        }
+      }
+      .gender-custom {
+        label {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 19px;
+          color: #7b7b7b;
+          width: 200px;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .form-item {
+        margin-bottom: 24px;
+        label {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 19px;
+          color: #7b7b7b;
+          width: 200px;
+        }
+        input {
+          background: #ffffff;
+          border: 1px solid #c8ccd9;
+          box-sizing: border-box;
+          border-radius: 8px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 17px;
+          color: #969eb4;
+          padding-left: 31px;
+          width: 474px;
+          height: 46px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .gender {
+        display: flex;
+        align-items: center;
+        .custom {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          cursor: pointer;
+          font-size: 14px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 15px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          /* Color 2 */
+
+          color: #969eb4;
+          width: 100px;
+        }
+
+        /* Hide the browser's default radio button */
+        .custom input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+        .checkmark {
+          position: absolute;
+          left: 8px;
+          left: 0;
+          height: 18px;
+          width: 18px;
+          background-color: transparent;
+          border: 1px solid #969eb4;
+          border-radius: 50%;
+        }
+        .custom:hover input ~ .checkmark {
+          background-color: #ccc;
+        }
+        .custom input:checked ~ .checkmark {
+          background-color: #fff;
+        }
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+        .custom input:checked ~ .checkmark:after {
+          display: block;
+        }
+        .custom .checkmark:after {
+          top: 2px;
+          left: 2px;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: linear-gradient(0deg, #009efd 0%, #2af598 100%);
+        }
+      }
+    }
+  }
+}

@@ -1,49 +1,57 @@
-body{
-    font-family: SVNGilroy-Regular;
+body {
+  font-family: SVNGilroy-Regular;
 }
 // 400
 @font-face {
-    font-family: SVNGilroy-Regular;
-    src: url(./../../fonts/SVNGilroyRegular.otf);
+  font-family: SVNGilroy-Regular;
+  src: url(./../../fonts/SVNGilroyRegular.otf);
+}
+a {
+  &:hover {
+    text-decoration: none;
   }
-a{
-    &:hover{
-        text-decoration: none;
-    }
 }
 @import "./settings/index.scss";
 @import "./common/common.scss";
 @import "./layouts/index.scss";
 @import "./components/login/login.scss";
-.container{
-    width: 100%;
-    max-width: 1440px;
+@import "./components/profile/profile-content.scss";
+.container {
+  width: 100%;
+  max-width: 1440px;
 }
-main{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 !important;
-    .left-sidebar{
-        width: 320px;
-        position: fixed;
-        min-height: 100vh;
-        top: 54px;
-        left: 0;
-        z-index: 1;
-    }
-    .right-filter{
-        width: 320px;
-        position: fixed;
-        min-height: 100vh;
-        top: 54px;
-        right: 0;
-        z-index: 1;
-    }
-    .main-content{
-        width: calc(100% - 320px - 320px);
-        background: #F9FAFF;
-        margin: 0 auto;
-        min-height: 100vh;
-        margin-top: 54px;
-    }
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important;
+  .left-sidebar {
+    width: 320px;
+    position: fixed;
+    min-height: 100vh;
+    top: 54px;
+    left: 0;
+    z-index: 1;
+  }
+  .right-filter {
+    width: 320px;
+    position: fixed;
+    min-height: 100vh;
+    top: 54px;
+    right: 0;
+    z-index: 1;
+  }
+  .main-content {
+    width: calc(100% - 320px - 320px);
+    background: #f9faff;
+    margin: 0 auto;
+    min-height: 100vh;
+    margin-top: 54px;
+  }
+  .main-profile {
+    width: calc(100% - 320px - 320px);
+    background: #fff;
+    margin: 0 auto;
+    min-height: 100vh;
+    margin-top: 54px;
+  }
 }
