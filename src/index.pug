@@ -2,4 +2,16 @@ extends master.pug
 block css
 	link(rel="stylesheet", href="css/main.css", attr)
 block content
-	p this is class="main-content"
+	include ./components/Home/packet-sale.pug
+	.container
+		include ./components/Post/box-style-1.pug
+		include ./components/Post/box-style-2.pug
+		include ./components/Post/box-style-2-1.pug
+		include ./components/Post/box-style-3.pug
+		include ./components/Post/box-style-3-1.pug
+		include ./components/Post/box-style-4.pug
+		include ./components/Post/box-style-4-1.pug
+		include ./components/Post/box-style-4-2.pug
+		include ./components/Post/box-style-5.pug
+		include ./components/Post/box-style-5-1.pug
+		include ./components/Post/box-style-6.pug

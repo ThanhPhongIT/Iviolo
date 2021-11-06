@@ -1,0 +1,131 @@
+.post-description{
+    padding: 12px 16px;
+    .post_box-title {
+        display: flex;
+        align-content: flex-end;
+        justify-content: space-between;
+        font-family: NotoSans-Regular;
+        margin-bottom: 13px;
+        .col-left{
+            .post-title{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 27px;
+                color: #1ECBC1;
+                margin-bottom: 9px;
+            }
+            .post-address{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                display: flex;
+                align-items: center;
+                color: #969EB4;
+            }
+        }
+        .col-right {
+            display: flex;
+            align-items: flex-end;
+            a.btn-taxi{
+                background: #E8FBFC;
+                border-radius: 16px;
+                margin-left: 24px;
+                display: flex;
+                align-items: center;
+                padding: 4px 8px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 19px;
+                color: #2A2C34;
+                img{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    .post_box-desc {
+        font-family: NotoSans-Regular;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #C8CCD9;
+        .post_content{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #7B7B7B;
+            margin-bottom: 9px;
+            span.read-more{
+                color: #1ECBC1;
+                cursor: pointer;
+            }
+        }
+        .post-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a{
+                font-weight: 500;
+                font-family: NotoSans-Regular;
+                font-size: 14px;
+                line-height: 19px;
+                display: flex;
+                align-items: center;
+                color: #2A2C34;
+                img{
+                    margin-left: 4px;
+                }
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    button{
+                        width: 94px;
+                        height: 26px;
+                        background: #E8FBFC;
+                        color: #1ECBC1;
+                        border-radius: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 16px;
+                        img{
+                            margin-right: 2px;
+                        }
+                    }
+                    &.reserve {
+                        button{
+                            color: #FFFFFF;
+                            background: linear-gradient(0deg, #009EFD -46.79%, #2AF598 129.65%);
+                        }
+                    }
+                    &.book-ship button{
+                        margin-right: 13px;
+                        border: 1px solid #D6F6F2;
+                    }
+                }
+            }
+        }
+    }
+    .post_box-comment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        button{
+            background: none;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            color: #7B7B7B;
+            font-family: Segoe UI;
+            img{
+                margin-right: 12px;
+            }
+        }
+    }
+}
