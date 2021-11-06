@@ -16,6 +16,8 @@ a {
 @import "./layouts/index.scss";
 @import "./components/login/login.scss";
 @import "./components/profile/profile-content.scss";
+@import "./components/my-post/my-post.scss";
+@import "./components/saved-location/save-location.scss";
 .container {
   width: 100%;
   max-width: 1440px;
