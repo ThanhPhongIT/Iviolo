@@ -6,6 +6,16 @@ body{
     font-family: SVNGilroy-Regular;
     src: url(./../../fonts/SVNGilroyRegular.otf);
   }
+// 400
+@font-face {
+    font-family: NotoSans-Regular;
+    src: url(./../../fonts/NotoSans-Regular.ttf);
+  }
+// 300
+@font-face {
+    font-family: Segoe UI;
+    src: url(./../../fonts/Segoe-UI.woff);
+  }
 a{
     &:hover{
         text-decoration: none;
@@ -15,6 +25,7 @@ a{
 @import "./common/common.scss";
 @import "./layouts/index.scss";
 @import "./components/login/login.scss";
+@import "./components/index.scss";
 .container{
     width: 100%;
     max-width: 1440px;
@@ -45,5 +56,13 @@ main{
         margin: 0 auto;
         min-height: 100vh;
         margin-top: 54px;
+    }
+}
+.main-content{
+    .container{
+        width: 100%;
+        max-width: 594px;
+        margin: 0 auto;
+        padding: 0 25px;
     }
 }

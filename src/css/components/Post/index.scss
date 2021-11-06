@@ -1,0 +1,11 @@
+@import "./post-author.scss";
+@import "./post-image.scss";
+@import "./post-description.scss";
+
+.box-post{
+    background: #FFFFFF;
+    border: 1px solid rgba(200, 204, 217, 0.32);
+    box-sizing: border-box;
+    border-radius: 16px; 
+    margin-bottom: 18px;
+}
