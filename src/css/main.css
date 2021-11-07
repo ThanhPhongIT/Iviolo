@@ -1287,31 +1287,31 @@ a {
         margin-top: 32px;
         justify-content: center; }
 
-.box-post .post-author {
+.post-author {
   position: relative;
   padding: 14px 42px 10px 16px; }
-  .box-post .post-author span {
+  .post-author span {
     vertical-align: middle; }
-  .box-post .post-author span.author_name {
+  .post-author span.author_name {
     font-weight: bold;
     font-family: NotoSans-Regular;
     font-size: 18px;
     line-height: 25px;
     color: #676262; }
-  .box-post .post-author span.dot-active {
+  .post-author span.dot-active {
     background: #42EC72;
     width: 12px;
     height: 12px;
     display: inline-block;
     border-radius: 50%;
     margin: 0 8px; }
-  .box-post .post-author span.author_last-time {
+  .post-author span.author_last-time {
     font-size: 14px;
     line-height: 19px;
     font-family: NotoSans-Regular;
     color: #969EB4; }
 
-.box-post .post_icon-more {
+.post_icon-more {
   position: absolute;
   top: 10px;
   right: 16px;
@@ -1524,12 +1524,225 @@ a {
       .post-description .post_box-comment button img {
         margin-right: 12px; }
 
+.view-post {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11111; }
+  .view-post .view-post_box-img {
+    width: calc(100% - 352px);
+    position: relative; }
+    .view-post .view-post_box-img:before {
+      content: '';
+      background: #2A2C34;
+      opacity: 0.94;
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; }
+    .view-post .view-post_box-img .grid-slider {
+      width: 100%;
+      max-width: 768px;
+      margin: auto;
+      position: relative; }
+    .view-post .view-post_box-img .slider.slider-for {
+      height: 100%;
+      max-height: 768px;
+      margin-bottom: 16px; }
+      .view-post .view-post_box-img .slider.slider-for button.slide-arrow.slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%);
+        background: #2A2C34;
+        opacity: 0.8;
+        color: #FFFFFF;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        transition: all 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .view-post .view-post_box-img .slider.slider-for button.slide-arrow.slick-arrow:hover {
+          color: #969EB4 !important;
+          background: #FFFFFF !important; }
+        .view-post .view-post_box-img .slider.slider-for button.slide-arrow.slick-arrow.slick-next {
+          right: -113px; }
+        .view-post .view-post_box-img .slider.slider-for button.slide-arrow.slick-arrow.slick-prev {
+          left: -113px; }
+    .view-post .view-post_box-img .slider img {
+      width: 100%; }
+    .view-post .view-post_box-img .slider.slider-nav .box-img {
+      transition: all 0.5s; }
+      .view-post .view-post_box-img .slider.slider-nav .box-img img {
+        width: 100%;
+        max-width: 152px; }
+    .view-post .view-post_box-img .slider.slider-nav .slick-track {
+      padding: 8px 0; }
+    .view-post .view-post_box-img .slider.slider-nav .slick-current {
+      transform: scale(1.1); }
+    .view-post .view-post_box-img .slider.slider-nav button.slide-arrow.slick-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      transform: translateY(-50%);
+      background: #2A2C34;
+      opacity: 0.8;
+      color: #FFFFFF;
+      width: 22px;
+      height: 42px;
+      transition: all 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #676262;
+      opacity: 0.92; }
+      .view-post .view-post_box-img .slider.slider-nav button.slide-arrow.slick-arrow:hover {
+        color: #969EB4 !important;
+        background: #FFFFFF !important; }
+      .view-post .view-post_box-img .slider.slider-nav button.slide-arrow.slick-arrow.slick-next {
+        right: 0;
+        border-radius: 8px 0px 0px 8px; }
+      .view-post .view-post_box-img .slider.slider-nav button.slide-arrow.slick-arrow.slick-prev {
+        right: left;
+        border-radius: 0 8px 8px 0px; }
+  .view-post .view-post_box-txt {
+    width: 352px;
+    padding-top: 15px;
+    background: #FFFFFF; }
+    .view-post .view-post_box-txt .post-description .post_box-title {
+      flex-wrap: wrap;
+      margin-bottom: 0; }
+      .view-post .view-post_box-txt .post-description .post_box-title .col-left, .view-post .view-post_box-txt .post-description .post_box-title .col-right {
+        width: 100%; }
+      .view-post .view-post_box-txt .post-description .post_box-title .col-right {
+        margin: 8px 0; }
+    .view-post .view-post_box-txt .post-description .post_box-desc {
+      padding-bottom: 12px; }
+      .view-post .view-post_box-txt .post-description .post_box-desc .post_content {
+        margin-bottom: 12px; }
+    .view-post .view-post_box-txt .post-description .box-review img {
+      max-width: 16px;
+      margin-right: 4px; }
+    .view-post .view-post_box-txt .post-description .post_comment button {
+      font-size: 14px;
+      line-height: 16px; }
+      .view-post .view-post_box-txt .post-description .post_comment button img {
+        max-width: 26px;
+        margin-right: 6px; }
+    .view-post .view-post_box-txt .post-description .post_share button {
+      font-size: 14px;
+      line-height: 19px; }
+      .view-post .view-post_box-txt .post-description .post_share button img {
+        max-width: 26px;
+        margin-right: 4px; }
+  .view-post .author_last-time, .view-post .post-option ul {
+    display: none !important; }
+
+.comment {
+  padding: 16px 0 14px 0;
+  border-bottom: 1px solid #C8CCD9;
+  border-top: 1px solid #C8CCD9;
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap; }
+  .comment .avatar {
+    width: 42px; }
+  .comment .box-comment {
+    width: calc(100% - 42px);
+    padding-left: 16px; }
+    .comment .box-comment input {
+      width: 100%;
+      height: 42px;
+      margin-bottom: 12px; }
+    .comment .box-comment .option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .comment .box-comment .option .upload-file {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px; }
+        .comment .box-comment .option .upload-file .box-img {
+          cursor: pointer; }
+          .comment .box-comment .option .upload-file .box-img label {
+            cursor: pointer; }
+          .comment .box-comment .option .upload-file .box-img #upload-image {
+            display: none; }
+      .comment .box-comment .option .btn-submit button {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        padding: 7px 21px;
+        background: #1ECBC1;
+        border-radius: 16px; }
+
 .box-post {
   background: #FFFFFF;
   border: 1px solid rgba(200, 204, 217, 0.32);
   box-sizing: border-box;
   border-radius: 16px;
   margin-bottom: 18px; }
+
+.carousel-tag {
+  background: #BFF3E8;
+  backdrop-filter: blur(4px);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 72px;
+  margin-bottom: 18px; }
+  .carousel-tag .list {
+    background: #FFFFFF;
+    border: 1px solid #C8CCD9;
+    box-sizing: border-box;
+    border-radius: 23px;
+    padding: 8px 18px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    margin-right: 8px; }
+  .carousel-tag .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    height: 100%;
+    width: 72px;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .carousel-tag .slick-prev {
+    left: 0; }
+  .carousel-tag .slick-next {
+    right: 0; }
+    .carousel-tag .slick-next::before {
+      content: '';
+      background: linear-gradient(90deg, #BFF3E8 66.66%, #000000 101.39%);
+      transform: rotate(-180deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+    .carousel-tag .slick-next img {
+      z-index: 2; }
 
 .wrapper-pro-cont {
   margin: 0 32px; }

@@ -1,37 +1,35 @@
-.box-post{
-    .post-author{
-        position: relative;
-        padding: 14px 42px 10px 16px;
-        span{
-            vertical-align: middle;
-        }
-        span.author_name{
-            font-weight: bold;
-            font-family: NotoSans-Regular;
-            font-size: 18px;
-            line-height: 25px;
-            color: #676262;
-        }
-        span.dot-active{
-            background: #42EC72;
-            width: 12px;
-            height: 12px;
-            display: inline-block;
-            border-radius: 50%;
-            margin: 0 8px;
-        }
-        span.author_last-time{
-            font-size: 14px;
-            line-height: 19px;
-            font-family: NotoSans-Regular;
-            color: #969EB4;
-        }
+.post-author{
+    position: relative;
+    padding: 14px 42px 10px 16px;
+    span{
+        vertical-align: middle;
     }
-    .post_icon-more{
-        position: absolute;
-        top: 10px;
-        right: 16px;
-        cursor: pointer;
-        z-index: 1;
+    span.author_name{
+        font-weight: bold;
+        font-family: NotoSans-Regular;
+        font-size: 18px;
+        line-height: 25px;
+        color: #676262;
     }
+    span.dot-active{
+        background: #42EC72;
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0 8px;
+    }
+    span.author_last-time{
+        font-size: 14px;
+        line-height: 19px;
+        font-family: NotoSans-Regular;
+        color: #969EB4;
+    }
+}
+.post_icon-more{
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    cursor: pointer;
+    z-index: 1;
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slick.css">
     <title></title>
     <link rel="stylesheet" href="css/main.css" attr>
   </head>
@@ -117,79 +118,69 @@
         <li> <a href="review-place.html"> <img src="./images/icon-nav-review.png" alt=""><span>Review the place</span></a></li>
         <li> <a href="login.html"> <img src="./images/icon-nav-logout.png" alt=""><span>Sign out</span></a></li>
       </ul>
-      <div class="main-profile">
-        <div class="wrapper-pro-cont">
-          <div class="top">
-            <div class="heading">Hồ sơ và hiển thị</div>
-            <div class="info">
-              <ul class="list-info">
-                <li class="item"> <img src="./images/profile/post.jpg" alt="">
-                  <div class="left"> 
-                    <div class="des">Bài viết </div>
-                    <div class="quan">3</div>
-                  </div>
-                </li>
-                <li class="item"> <img src="./images/profile/voucher.jpg" alt="">
-                  <div class="left"> 
-                    <div class="des">Voucher </div>
-                    <div class="quan">3</div>
-                  </div>
-                </li>
-                <li class="item"> <img src="./images/profile/arrived.jpg" alt="">
-                  <div class="left"> 
-                    <div class="des">Đã đi </div>
-                    <div class="quan">3</div>
-                  </div>
-                </li>
-                <li class="item"> <img src="./images/profile/tour.jpg" alt="">
-                  <div class="left"> 
-                    <div class="des">Lịch trình</div>
-                    <div class="quan">3</div>
-                  </div>
-                </li>
-              </ul>
+      <div class="main-content"> 
+        <div class="container">
+          <div class="variable-width carousel-tag">
+            <div class="list"> <span>Tourist places (in general)</span></div>
+            <div class="list"> <span>Park</span></div>
+            <div class="list"> <span>Hotel</span></div>
+            <div class="list"> <span>Gaming/ PC Room</span></div>
+            <div class="list"> <span>Hotel</span></div>
+            <div class="list"> <span>Park</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="right-filter"> 
+        <p class="title-filter">Filter setting</p>
+        <div class="filter-price"> 
+          <p class="title">Price range</p>
+          <div class="progres-sprice">
+            <div class="progres-sprice_width"> </div>
+            <div class="progres-sprice_before">
+              <div class="dot"></div><span>$50</span>
+            </div>
+            <div class="progres-sprice_after">
+              <div class="dot"></div><span>$1200</span>
             </div>
           </div>
-          <div class="bottom">
-            <div class="heading">Thông tin tài khoản</div>
-            <form>
-              <div class="form-item">
-                <label>Tên:</label>
-                <input type="text">
-              </div>
-              <div class="form-item">
-                <label>Tên tài khoản: </label>
-                <input type="text">
-              </div>
-              <div class="form-item">
-                <label>Email: </label>
-                <input type="text">
-              </div>
-              <div class="form-item">
-                <label>Thông tin liên hệ: </label>
-                <input type="text">
-              </div>
-              <div class="gender-custom">
-                <label>Giới tính </label>
-                <div class="gender">
-                  <label class="custom">
-                    <input type="radio" checked="checked" name="radio"><span class="checkmark"> </span>Nam
-                  </label>
-                  <label class="custom">
-                    <input type="radio" name="radio"><span class="checkmark"> </span>Nữ
-                  </label>
-                </div>
-              </div>
-              <button type="submit">Save</button>
-            </form>
-          </div>
+        </div>
+        <div class="filter-review"> 
+          <p class="title">Rating</p>
+          <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
+        </div>
+        <div class="filter-checkbox"> 
+          <p class="title">Establishment Type</p>
+          <ul class="list-checkbox"> 
+            <li> 
+              <input type="checkbox" name="" id="Restaurants">
+              <label for="Restaurants">Restaurants</label>
+            </li>
+            <li> 
+              <input type="checkbox" name="" id="Quick Bites">
+              <label for="Quick Bites">Quick Bites</label>
+            </li>
+            <li> 
+              <input type="checkbox" name="" id="Dessert">
+              <label for="Dessert">Dessert</label>
+            </li>
+            <li> 
+              <input type="checkbox" name="" id="Coffee &amp; Tea">
+              <label for="Coffee &amp; Tea">Coffee & Tea</label>
+            </li>
+            <li> 
+              <input type="checkbox" name="" id="Bars &amp; Pubs">
+              <label for="Bars &amp; Pubs">Bars & Pubs</label>
+            </li>
+          </ul>
+          <div class="show-more"> <span>Show more</span><img src="./images/icon-arrow-down.png" alt=""></div>
         </div>
       </div>
     </main>
     <footer id="footer"><a class="icon-mess" href="#"><img src="./images/icon-mess.png" alt=""></a></footer>
-    <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script><script src="https://kit.fontawesome.com/a7f9139fa6.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
