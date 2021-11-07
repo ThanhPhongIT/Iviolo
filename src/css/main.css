@@ -749,13 +749,15 @@ a {
       .packet-sale .title-packet-sale .col-right span {
         margin-right: 8px; }
   .packet-sale ul {
-    display: flex;
-    flex-wrap: wrap; }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px; }
+    .packet-sale ul img {
+      width: 100%; }
     .packet-sale ul li {
       width: 100%;
       max-width: 192px;
       padding-left: 6px;
-      margin-left: 8px;
       position: relative; }
       .packet-sale ul li .packet-box {
         position: relative;
@@ -848,8 +850,6 @@ a {
           line-height: 22px;
           letter-spacing: 0.01em;
           padding: 0 4px; }
-      .packet-sale ul li:first-child {
-        margin-left: 0; }
       .packet-sale ul li::before {
         content: '';
         background: #FC8233;

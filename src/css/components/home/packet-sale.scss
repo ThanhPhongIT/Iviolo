@@ -33,13 +33,16 @@
 		}
 	}
 	ul {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-gap: 8px;
+		img{
+			width: 100%;
+		}
 		li{
 				width: 100%;
 				max-width: 192px;
 				padding-left: 6px;
-				margin-left: 8px;
 				position: relative;
 				.packet-box{
 						position: relative;
@@ -141,9 +144,6 @@
 								letter-spacing: 0.01em;
 								padding: 0 4px;
 						}
-				}
-				&:first-child{
-						margin-left: 0;
 				}
 				&::before{
 						content: '';
