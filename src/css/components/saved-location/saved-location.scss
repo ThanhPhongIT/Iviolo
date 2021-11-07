@@ -1,37 +1,12 @@
-.packet-sale {
-  width: 100%;
-  max-width: 594px;
-  margin: 0 auto 18px auto;
-  .title-packet-sale {
-    padding: 18px 25px 10px 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .col-left {
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 19px;
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.03em;
-      color: #2a2c34;
-    }
-    .col-right {
-      cursor: pointer;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 17px;
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.03em;
-      color: #969eb4;
-      display: flex;
-      align-items: center;
-      span {
-        margin-right: 8px;
-      }
-    }
+.wrapper-saved-location {
+  .content-list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 100vh;
   }
+}
+.coupon-management {
+  margin-top: 100px;
   ul {
     display: flex;
     flex-wrap: wrap;

@@ -1,0 +1,27 @@
+#modalActionPost {
+  width: 610px;
+  left: 50%;
+  transform: translateX(-50%);
+  .modal-content {
+    border-radius: 16px;
+  }
+  .modal-body {
+    padding: 0;
+    ul {
+      li {
+        height: 78px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 21px;
+        letter-spacing: -0.02em;
+        color: #676262;
+        border-bottom: 1px solid #c8ccd9;
+      }
+    }
+  }
+}

@@ -1,12 +1,21 @@
 .wrapper-my-post {
+  position: relative;
+
   .top {
-    margin-top: 40px;
+    top: 50px;
+    padding-top: 20px;
+    margin-bottom: 26px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
     .list {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       width: 100%;
       border-bottom: 0.6px solid #c8ccd9;
+      margin-bottom: 40px;
       .item {
         display: flex;
         align-items: center;
@@ -31,5 +40,15 @@
         }
       }
     }
+  }
+  .content-post {
+    margin: 0px auto;
+    min-height: 100vh;
+    width: 544px;
+    overflow: auto;
+    margin-top: 102px;
+  }
+  .content-list {
+    margin-top: 100px;
   }
 }

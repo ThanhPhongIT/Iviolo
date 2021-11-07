@@ -23,13 +23,13 @@ header
                 img(src="./images/icon-food.png", alt="")
                 img.active(src="./images/icon-food-active.png", alt="")
             li
-              a(href="#") 
+              a(href="profile.html") 
                 img(src="./images/icon-profile.png", alt="")
                 img.active(src="./images/icon-profile-active.png", alt="")
       .col-right 
         ul.header__option 
           li
-            a.create-post(href="#")
+            a.create-post(href="#", data-toggle='modal' data-target='#createPostModal')
               img(src="./images/icon-edit.png", alt="")
               span post
           li 
@@ -39,3 +39,5 @@ header
             a.box-language(href="#")
               img(src="./images/icon-language.png", alt="") 
               span EN
+include ./modal-create-post.pug
+
