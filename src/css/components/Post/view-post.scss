@@ -1,0 +1,165 @@
+.view-post{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11111;
+    .view-post_box-img{
+        width: calc(100% - 352px);
+        position: relative;
+        &:before{
+            content: '';
+            background: #2A2C34;
+            opacity: 0.94;
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+        .grid-slider{
+            width: 100%;
+            max-width: 768px;
+            margin: auto;
+            position: relative;
+        }
+        .slider{    
+            &.slider-for{
+                height: 100%;
+                max-height: 768px;
+                margin-bottom: 16px;
+                button.slide-arrow.slick-arrow {
+                    position: absolute;
+                    top: 50%;
+                    z-index: 1;
+                    transform: translateY(-50%);
+                    background: #2A2C34;
+                    opacity: 0.8;
+                    color: #FFFFFF;
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 50%;
+                    transition: all 0.5s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover{
+                        color: #969EB4 !important;
+                        background: #FFFFFF !important;
+                    }
+                    &.slick-next{
+                        right: -113px;
+                    }
+                    &.slick-prev{
+                        left: -113px;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+            }
+            &.slider-nav{
+                .box-img{
+                    transition: all 0.5s;
+                    img{
+                        width: 100%;
+                        max-width: 152px;
+                    }
+                }
+                .slick-track{
+                    padding: 8px 0;
+                }
+                .slick-current{
+                    transform: scale(1.1);
+                }
+                button.slide-arrow.slick-arrow {
+                    position: absolute;
+                    top: 50%;
+                    z-index: 1;
+                    transform: translateY(-50%);
+                    background: #2A2C34;
+                    opacity: 0.8;
+                    color: #FFFFFF;
+                    width: 22px;
+                    height: 42px;
+                    transition: all 0.5s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #676262;
+                    opacity: 0.92;
+                    &:hover{
+                        color: #969EB4 !important;
+                        background: #FFFFFF !important;
+                    }
+                    &.slick-next{
+                        right: 0;
+                        border-radius: 8px 0px 0px 8px;
+                    }
+                    &.slick-prev{
+                        right: left;
+                        border-radius: 0 8px 8px 0px;
+                    }
+                }
+            }
+        }
+    }
+    .view-post_box-txt{
+        width: 352px;
+        padding-top: 15px;
+        background: #FFFFFF;
+        .post-description{
+            .post_box-title{
+                flex-wrap: wrap;
+                margin-bottom: 0;
+                .col-left,.col-right{
+                    width: 100%;
+                }
+                .col-right{
+                    margin: 8px 0;
+                }
+            }
+            .post_box-desc{
+                padding-bottom: 12px;
+                .post_content{
+                    margin-bottom: 12px;
+                }
+            } 
+            .box-review{
+                img{
+                    max-width: 16px;
+                    margin-right: 4px;
+                }
+            }
+            .post_comment{
+                button{
+                    font-size: 14px;
+                    line-height: 16px;
+                    img{
+                        max-width: 26px;
+                        margin-right: 6px;
+                    }
+                }
+            }
+            .post_share{
+                button{
+                    font-size: 14px;
+                    line-height: 19px;
+                    img{
+                        max-width: 26px;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .author_last-time,.post-option ul{
+        display: none !important;
+    }
+}

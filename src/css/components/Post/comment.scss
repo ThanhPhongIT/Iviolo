@@ -1,0 +1,50 @@
+.comment {
+    padding: 16px 0 14px 0;
+    border-bottom: 1px solid #C8CCD9;
+    border-top: 1px solid #C8CCD9;
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    .avatar{
+        width: 42px;
+    }
+    .box-comment {
+        width: calc(100% - 42px);
+        padding-left: 16px;
+        input{
+            width: 100%;
+            height: 42px;
+            margin-bottom: 12px;
+        }
+        .option{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .upload-file{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 24px;
+                .box-img{
+                    cursor: pointer;
+                    label{
+                        cursor: pointer;
+                    }
+                    #upload-image{
+                        display: none;
+                    }
+                }
+            }
+            .btn-submit{
+                button{
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                    padding: 7px 21px;
+                    background: #1ECBC1;
+                    border-radius: 16px;
+                }
+            }
+        }
+    }
+}
