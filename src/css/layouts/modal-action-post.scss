@@ -1,5 +1,6 @@
 #modalActionPost {
-  width: 610px;
+  z-index: 10000000;
+  width: 100%;
   left: 50%;
   transform: translateX(-50%);
   .modal-content {
@@ -21,6 +22,7 @@
         letter-spacing: -0.02em;
         color: #676262;
         border-bottom: 1px solid #c8ccd9;
+        cursor: pointer;
       }
     }
   }

@@ -531,7 +531,8 @@ a {
       border-radius: 24.8478px;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      cursor: pointer; }
 
 #createPostModal {
   width: 610px;
@@ -678,7 +679,8 @@ a {
     background-size: 11px; }
 
 #modalActionPost {
-  width: 610px;
+  z-index: 10000000;
+  width: 100%;
   left: 50%;
   transform: translateX(-50%); }
   #modalActionPost .modal-content {
@@ -697,7 +699,8 @@ a {
       line-height: 21px;
       letter-spacing: -0.02em;
       color: #676262;
-      border-bottom: 1px solid #c8ccd9; }
+      border-bottom: 1px solid #c8ccd9;
+      cursor: pointer; }
 
 .wrapper-login {
   width: 100vw;

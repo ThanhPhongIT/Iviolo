@@ -3,8 +3,12 @@
 		.modal-content
 			.modal-body
 				ul 
-					li Lưu bài viết
-					li Tạo lịch trình
-					li Đăng ký dịch bài viết
-					li Đánh dấu đã đến đây
+					li(data-dismiss='modal', data-toggle='modal', data-target='#modalNotMember') Lưu bài viết
+					li(data-dismiss='modal', data-toggle='modal', data-target='#modalSchedule') Tạo lịch trình
+					li(data-dismiss='modal', data-toggle='modal', data-target='#modalTranslate') Đăng ký dịch bài viết
+					li(data-dismiss='modal') Đánh dấu đã đến đây
 					li(data-dismiss='modal', style="border-bottom: none;") Thoát
+
+include ../layouts/modal-not-member.pug
+include ../layouts/modal-schedule.pug
+include ../layouts/modal-translate.pug
