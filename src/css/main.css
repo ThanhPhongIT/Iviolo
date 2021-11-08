@@ -231,7 +231,6 @@ header {
   background: #ffffff;
   box-shadow: 8px 1px 6px rgba(200, 204, 217, 0.4);
   height: 54px;
-  overflow: hidden;
   z-index: 10;
   position: fixed;
   top: 0;
@@ -856,6 +855,64 @@ a {
   .form-post input[type="number"] {
     -moz-appearance: textfield; }
 
+.form-search {
+  position: absolute;
+  z-index: 1111111;
+  top: 41px;
+  background: #FFFFFF;
+  width: 100%;
+  border: 0.84293px solid rgba(200, 204, 217, 0.32);
+  box-sizing: border-box;
+  padding: 6px 0 30px 0;
+  display: none; }
+  .form-search .label-search, .form-search .location {
+    margin-bottom: 14px; }
+  .form-search img {
+    top: unset !important;
+    right: 0 !important;
+    position: relative !important;
+    transform: unset !important;
+    margin-right: 3px; }
+  .form-search .label-search {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 11.1524px;
+    line-height: 12px;
+    color: #646464;
+    padding: 0 10px; }
+    .form-search .label-search span {
+      color: #1ECBC1; }
+  .form-search .location .label-location {
+    font-weight: 600;
+    font-size: 11.1524px;
+    line-height: 12px;
+    color: #646464;
+    margin-bottom: 8px;
+    padding: 0 10px; }
+  .form-search .restaurants .label-restaurants {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.1524px;
+    line-height: 12px;
+    color: #646464;
+    margin-bottom: 8px;
+    padding: 0 10px; }
+  .form-search ul.list-search li {
+    font-weight: normal;
+    font-size: 11.1524px;
+    line-height: 12px;
+    color: #707070;
+    padding: 7px 10px;
+    transition: all 0.5; }
+    .form-search ul.list-search li:hover {
+      background: #ECECEC; }
+    .form-search ul.list-search li span {
+      color: #1ECBC1; }
+
+.box-search.active .form-search {
+  display: block !important; }
+
 .wrapper-login {
   width: 100vw;
   height: 100vh;
@@ -1477,7 +1534,8 @@ a {
 
 .post-image {
   height: 544px;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
   .post-image img {
     width: 100%;
     height: 100%;
@@ -1742,7 +1800,8 @@ a {
       transition: all 0.5s; }
       .view-post .view-post_box-img .slider.slider-nav .box-img img {
         width: 100%;
-        max-width: 152px; }
+        max-width: 152px;
+        cursor: pointer; }
     .view-post .view-post_box-img .slider.slider-nav .slick-track {
       padding: 8px 0; }
     .view-post .view-post_box-img .slider.slider-nav .slick-current {
@@ -1804,6 +1863,12 @@ a {
         margin-right: 4px; }
   .view-post .author_last-time, .view-post .post-option ul {
     display: none !important; }
+  .view-post span.close-post {
+    position: absolute;
+    top: 26px;
+    left: 16px;
+    display: inline-block;
+    cursor: pointer; }
 
 .comment {
   padding: 16px 0 14px 0;

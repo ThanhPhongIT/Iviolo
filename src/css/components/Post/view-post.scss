@@ -70,6 +70,7 @@
                     img{
                         width: 100%;
                         max-width: 152px;
+                        cursor: pointer;
                     }
                 }
                 .slick-track{
@@ -161,5 +162,12 @@
     }
     .author_last-time,.post-option ul{
         display: none !important;
+    }
+    span.close-post {
+        position: absolute;
+        top: 26px;
+        left: 16px;
+        display: inline-block;
+        cursor: pointer;
     }
 }
