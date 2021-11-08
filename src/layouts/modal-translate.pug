@@ -1,0 +1,17 @@
+#modalTranslate.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+	.modal-dialog.modal-lg.modal-dialog-centered(role='document')
+		.modal-content
+			.modal-header
+				h5.modal-title 
+					img(src="./images/icon-create.svg", alt="" style="margin-right: 15px;")
+					| Tạo bài viết
+				button.close(type='button' data-dismiss='modal' aria-label='Close')
+					span(aria-hidden='true')
+						img(src="./images/icon-close.svg", alt="")
+			.modal-body
+				.row 
+					.col-6 
+						include ./form-post.pug
+					.col-6 
+						include ./form-post.pug
+				button.btn.btn-post(type='button' data-dismiss='modal') Đăng bài

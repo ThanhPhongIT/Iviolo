@@ -1,2 +1,96 @@
 #modalNotMember {
+  position: absolute;
+  width: 544px;
+  left: 50%;
+  transform: translateX(-50%);
+  .close {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+  button {
+    &:focus {
+      outline: none;
+    }
+  }
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: none;
+  }
+  .modal-content {
+    border-radius: 16px;
+  }
+  .modal-body {
+    padding: 60px 107px 51px 107px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      padding-bottom: 18px;
+    }
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 144%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #1a2b49;
+    }
+    .des {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 144%;
+      text-align: center;
+      color: #1a2b49;
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 48px;
+      .signin {
+        width: 140px;
+        height: 46px;
+        background: #1ecbc1;
+        border-radius: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 38px;
+        a {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 10px;
+          letter-spacing: -0.031314px;
+          color: #ffffff;
+        }
+      }
+      .register {
+        width: 140px;
+        height: 46px;
+        border: 0.64225px solid #1a2b49;
+        box-sizing: border-box;
+        border-radius: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        a {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 10px;
+          letter-spacing: -0.031314px;
+          color: #1a2b49;
+        }
+      }
+    }
+  }
 }

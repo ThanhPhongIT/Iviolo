@@ -1,0 +1,26 @@
+#modalSchedule {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  color: #1ecbc1;
+  border: none;
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../../images/icon-datepick.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+  }
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../../images/icon-time.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+  }
+}

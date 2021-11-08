@@ -1,0 +1,51 @@
+#modalTranslate {
+  width: 1240px !important;
+  left: 50%;
+  transform: translateX(-50%);
+  .modal-content {
+    border-radius: 16px;
+    width: 1240px;
+  }
+  .modal-lg {
+    max-width: 1240px !important;
+  }
+  .modal-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #1ecbc1;
+  }
+  .modal-header {
+    align-items: center;
+    border: none;
+    border-radius: 16px 16px 0 0;
+    background: linear-gradient(
+      90deg,
+      #dee8f5 0%,
+      #dbe9f1 35.42%,
+      #d5ebf2 49.32%,
+      #cdeff2 65.6%,
+      #cff5f0 83.61%,
+      #dbf7f3 100%
+    );
+  }
+  .btn-post {
+    width: 352px;
+    height: 42px;
+    margin: auto;
+    background: #1ecbc1;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}

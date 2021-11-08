@@ -1,0 +1,42 @@
+form.form-post
+	.form-group 
+		label Tiêu đề:
+		input(type="text", placeholder="Nhập tiêu đề bài viết")
+	.form-group 
+		label Địa chỉ:
+		input(type="text", placeholder="Nhập địa chỉ chi tiết")
+	.line 
+		.form-group 
+			label Chi phí:
+			input(type="number")
+		.form-group 
+			label Ngôn ngữ:
+			select.styled-select
+				option Tiếng Anh
+				option Tiếng Việt
+	.line 
+		.form-group 
+			label Trạng thái:
+			select.styled-select
+				option Hoạt động
+				option Không hoạt động
+		.form-group 
+			label Loại bài:
+			select.styled-select
+				option Blog
+				option ABC
+	.form-group 
+		label Liên hệ:
+		input(type="text")
+	.form-group 
+		label Cách đi:
+		input(type="text", placeholder="Bạn đến đây bằng cách nào?")
+	.form-group.d-flex.justify-between 
+		label Mô tả: 
+		textarea(placeholder="Nội dung thông tin bài viết...") 
+	label.post-file(for="postfile") 
+		p Tải hình ảnh, video lên
+		.img 
+			img(src="./images/icon-img.jpg", alt="")
+			img(src="./images/icon-gif.jpg", alt="")
+	input(type="file", id="postfile", style="display: none")

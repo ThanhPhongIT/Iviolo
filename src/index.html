@@ -45,7 +45,7 @@
             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form class="form-post">
               <div class="form-group"> 
                 <label>Tiêu đề:</label>
                 <input type="text" placeholder="Nhập tiêu đề bài viết">
@@ -100,8 +100,8 @@
                 <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
               </label>
               <input type="file" id="postfile" style="display: none">
-              <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
             </form>
+            <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
           </div>
         </div>
       </div>
@@ -120,6 +120,49 @@
       </ul>
       <div class="main-content"> 
         <div class="container">
+          <div class="packet-sale">
+            <div class="title-packet-sale">
+              <div class="col-left"> 
+                <p>Mã khuyến mãi</p>
+              </div>
+              <div class="col-right"> <span>Xem thêm</span><img src="./images/icon-arrow-right.png" alt=""></div>
+            </div>
+            <ul>
+              <li>
+                <div class="packet-box">
+                  <div class="box-img"> <img src="./images/packet-sale.png" alt=""></div>
+                  <p class="packet-name">CUBA</p>
+                  <div class="box-txt_desc"> 
+                    <div class="box-desc_left"> <img class="local-airport_icon" src="./images/baseline-local_airport.png" alt=""><span class="local-airport_txt">Flight + 4 nights</span></div>
+                    <div class="box-desc_right"><span>$ 350</span></div>
+                  </div>
+                </div>
+                <div class="packet_discount"><span>Up to</span><span class="value">50%</span><span>off</span></div>
+              </li>
+              <li>
+                <div class="packet-box">
+                  <div class="box-img"> <img src="./images/packet-sale.png" alt=""></div>
+                  <p class="packet-name">CUBA</p>
+                  <div class="box-txt_desc"> 
+                    <div class="box-desc_left"> <img class="local-airport_icon" src="./images/baseline-local_airport.png" alt=""><span class="local-airport_txt">Flight + 4 nights</span></div>
+                    <div class="box-desc_right"><span>$ 350</span></div>
+                  </div>
+                </div>
+                <div class="packet_discount"><span>Up to</span><span class="value">50%</span><span>off</span></div>
+              </li>
+              <li>
+                <div class="packet-box">
+                  <div class="box-img"> <img src="./images/packet-sale.png" alt=""></div>
+                  <p class="packet-name">CUBA</p>
+                  <div class="box-txt_desc"> 
+                    <div class="box-desc_left"> <img class="local-airport_icon" src="./images/baseline-local_airport.png" alt=""><span class="local-airport_txt">Flight + 4 nights</span></div>
+                    <div class="box-desc_right"><span>$ 350</span></div>
+                  </div>
+                </div>
+                <div class="packet_discount"><span>Up to</span><span class="value">50%</span><span>off</span></div>
+              </li>
+            </ul>
+          </div>
           <div class="box-post"> 
             <div class="post-author"> 
               <div> <span class="author_name">Pocheonsi_dd2</span><span class="dot-active"></span><span class="author_last-time">25/07/2021 07:50:32</span></div><img class="post_icon-more" src="./images/icon-more.png" alt="" data-toggle="modal" data-target="#modalActionPost">
@@ -141,16 +184,14 @@
             </div>
             <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
                   </div>
                 </div>
@@ -158,17 +199,164 @@
             </div>
             <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
-                    <p class="title">Not a Member Yet?</p>
-                    <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
-                    <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
                     </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
                   </div>
                 </div>
               </div>
@@ -252,16 +440,14 @@
             </div>
             <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
                   </div>
                 </div>
@@ -269,17 +455,420 @@
             </div>
             <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
+                    </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post-image post-layout-1">
+              <div class="row"> 
+                <div class="box-img"><img src="./images/post-img.png" alt=""></div>
+              </div>
+            </div>
+            <div class="post-description">
+              <div class="post_box-title">
+                <div class="col-left">
+                  <p class="post-title">포천아트밸리</p>
+                  <p class="post-address">South Korea, 경기 포천시 신북면 아트밸리로 234</p>
+                </div>
+                <div class="col-right"> <a class="btn-map" href="#"><img src="./images/icon-map.png" alt=""></a><a class="btn-taxi" href="#"> <img src="./images/icon-taxi.png" alt=""><span>Book taxi</span></a></div>
+              </div>
+              <div class="post_box-desc"> 
+                <div class="post_content"><span>Relationships will always need to be fixed, even when you think nothing is wrong. “She has the ability to present comple... </span><span class="read-more">See more</span></div>
+                <div class="post-option"> <a href="#"><span>See original post</span><img src="./images/icon-arrow-down.png" alt=""></a>
+                  <ul> 
+                    <li class="book-ship">
+                      <button><img src="./images/icon-order-food.png" alt=""><span>Book Ship</span></button>
+                    </li>
+                    <li class="reserve"> 
+                      <button><span>Reserve</span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="post_box-comment"> 
+                <div class="post_review">
+                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
+                </div>
+                <div class="post_comment"> 
+                  <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
+                </div>
+                <div class="post_share">
+                  <button> <img src="./images/icon-share.png" alt=""><span>Share</span></button>
+                </div>
+              </div>
+              <div class="comment"> 
+                <div class="avatar"> <img src="./images/icon-nav-user.png" alt=""></div>
+                <div class="box-comment"> 
+                  <input type="text" placeholder="Write your comment ">
+                  <div class="option"> 
+                    <div class="upload-file"> 
+                      <div class="box-img"> 
+                        <label for="upload-image"><img src="./images/icon-upload-img.png" alt=""></label>
+                        <input type="file" name="" id="upload-image">
+                      </div>
+                      <div class="box-img"><img src="./images/icon-upload-gif.png" alt=""></div>
+                      <div class="box-img"><img src="./images/icon-emoji-smile.png" alt=""></div>
+                    </div>
+                    <div class="btn-submit"> 
+                      <button>Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-post"> 
+            <div class="post-author"> 
+              <div> <span class="author_name">Pocheonsi_dd2</span><span class="dot-active"></span><span class="author_last-time">25/07/2021 07:50:32</span></div><img class="post_icon-more" src="./images/icon-more.png" alt="" data-toggle="modal" data-target="#modalActionPost">
+            </div>
+            <div class="modal fade" id="modalActionPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <ul> 
+                      <li data-dismiss="modal" data-toggle="modal" data-target="#modalNotMember">Lưu bài viết</li>
+                      <li data-dismiss="modal" data-toggle="modal" data-target="#modalSchedule">Tạo lịch trình</li>
+                      <li data-dismiss="modal" data-toggle="modal" data-target="#modalTranslate">Đăng ký dịch bài viết</li>
+                      <li data-dismiss="modal">Đánh dấu đã đến đây</li>
+                      <li data-dismiss="modal" style="border-bottom: none;">Thoát</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
+                    </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
                   </div>
                 </div>
               </div>
@@ -364,16 +953,14 @@
             </div>
             <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
                   </div>
                 </div>
@@ -381,17 +968,164 @@
             </div>
             <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
-                    <p class="title">Not a Member Yet?</p>
-                    <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
-                    <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
                     </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
                   </div>
                 </div>
               </div>
@@ -476,16 +1210,14 @@
             </div>
             <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
                   </div>
                 </div>
@@ -493,17 +1225,164 @@
             </div>
             <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
-                    <p class="title">Not a Member Yet?</p>
-                    <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
-                    <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
                     </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
                   </div>
                 </div>
               </div>
@@ -595,16 +1474,14 @@
             </div>
             <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
                   </div>
                 </div>
@@ -612,17 +1489,164 @@
             </div>
             <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
-                    <p class="title">Not a Member Yet?</p>
-                    <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
-                    <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
                     </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
                   </div>
                 </div>
               </div>
@@ -712,16 +1736,14 @@
             </div>
             <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
                   </div>
                 </div>
@@ -729,17 +1751,164 @@
             </div>
             <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
-                    <p class="title">Not a Member Yet?</p>
-                    <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
-                    <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
                     </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
                   </div>
                 </div>
               </div>
@@ -834,16 +2003,14 @@
             </div>
             <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
                   </div>
                 </div>
@@ -851,17 +2018,164 @@
             </div>
             <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
-                    <p class="title">Not a Member Yet?</p>
-                    <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
-                    <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
                     </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
                   </div>
                 </div>
               </div>
@@ -948,16 +2262,14 @@
             </div>
             <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
                   </div>
                 </div>
@@ -965,17 +2277,164 @@
             </div>
             <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
-                    <p class="title">Not a Member Yet?</p>
-                    <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
-                    <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
                     </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
                   </div>
                 </div>
               </div>
@@ -1072,16 +2531,14 @@
             </div>
             <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
                   </div>
                 </div>
@@ -1089,17 +2546,164 @@
             </div>
             <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
-                    <p class="title">Not a Member Yet?</p>
-                    <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
-                    <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
                     </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
                   </div>
                 </div>
               </div>
@@ -1195,16 +2799,14 @@
             </div>
             <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
                   </div>
                 </div>
@@ -1212,17 +2814,164 @@
             </div>
             <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
-                    <p class="title">Not a Member Yet?</p>
-                    <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
-                    <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
                     </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
                   </div>
                 </div>
               </div>
@@ -1318,16 +3067,14 @@
             </div>
             <div class="modal fade" id="modalNotMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
+                  <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button><img src="./images/notmember.svg" alt="">
                     <p class="title">Not a Member Yet?</p>
                     <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
                     <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                      <button class="signin" data-dismiss="modal"><a href="./login.html"> Sign In</a></button>
+                      <button class="register" data-dismiss="modal"><a href="./signup.html"> Register</a></button>
                     </div>
                   </div>
                 </div>
@@ -1335,17 +3082,164 @@
             </div>
             <div class="modal fade" id="modalSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span>
-                </div>
                 <div class="modal-content">
-                  <div class="modal-body"><img src="./images/notmember.svg" alt="">
-                    <p class="title">Not a Member Yet?</p>
-                    <p class="des">Join us! Iviolo.com members can access savungs of up to 50% and earn Iviolo Coins while booking.</p>
-                    <div class="bottom"> 
-                      <button class="signin">Sign In</button>
-                      <button class="register">Register</button>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Create schedule</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="date"> 
+                      <label>Date</label>
+                      <input type="date">
                     </div>
+                    <div class="time-range"> 
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                      <div class="time"> 
+                        <label>Time </label>
+                        <input type="time">
+                      </div>
+                    </div>
+                    <div class="info"><img src="./images/schedule-img.jpg" alt="">
+                      <div class="right"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="des">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
+                    </div>
+                    <button>Create</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="modalTranslate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"> <img src="./images/icon-create.svg" alt="" style="margin-right: 15px;">Tạo bài viết</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/icon-close.svg" alt=""></span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row"> 
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                      <div class="col-6"> 
+                        <form class="form-post">
+                          <div class="form-group"> 
+                            <label>Tiêu đề:</label>
+                            <input type="text" placeholder="Nhập tiêu đề bài viết">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Địa chỉ:</label>
+                            <input type="text" placeholder="Nhập địa chỉ chi tiết">
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Chi phí:</label>
+                              <input type="number">
+                            </div>
+                            <div class="form-group"> 
+                              <label>Ngôn ngữ:</label>
+                              <select class="styled-select">
+                                <option>Tiếng Anh</option>
+                                <option>Tiếng Việt</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="line"> 
+                            <div class="form-group"> 
+                              <label>Trạng thái:</label>
+                              <select class="styled-select">
+                                <option>Hoạt động</option>
+                                <option>Không hoạt động</option>
+                              </select>
+                            </div>
+                            <div class="form-group"> 
+                              <label>Loại bài:</label>
+                              <select class="styled-select">
+                                <option>Blog</option>
+                                <option>ABC</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group"> 
+                            <label>Liên hệ:</label>
+                            <input type="text">
+                          </div>
+                          <div class="form-group"> 
+                            <label>Cách đi:</label>
+                            <input type="text" placeholder="Bạn đến đây bằng cách nào?">
+                          </div>
+                          <div class="form-group d-flex justify-between"> 
+                            <label>Mô tả: </label>
+                            <textarea placeholder="Nội dung thông tin bài viết..."> </textarea>
+                          </div>
+                          <label class="post-file" for="postfile"> 
+                            <p>Tải hình ảnh, video lên</p>
+                            <div class="img"> <img src="./images/icon-img.jpg" alt=""><img src="./images/icon-gif.jpg" alt=""></div>
+                          </label>
+                          <input type="file" id="postfile" style="display: none">
+                        </form>
+                      </div>
+                    </div>
+                    <button class="btn btn-post" type="button" data-dismiss="modal">Đăng bài</button>
                   </div>
                 </div>
               </div>
