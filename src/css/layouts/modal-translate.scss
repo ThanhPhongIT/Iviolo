@@ -2,6 +2,7 @@
   width: 1240px !important;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 100000;
   .modal-content {
     border-radius: 16px;
     width: 1240px;

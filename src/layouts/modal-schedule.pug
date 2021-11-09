@@ -1,5 +1,5 @@
 #modalSchedule.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
-	.modal-dialog.modal-dialog-centered(role='document')
+	.modal-dialog.modal-lg.modal-dialog-centered(role='document')
 		.modal-content
 			.modal-header
 				h5.modal-title Create schedule
@@ -9,17 +9,17 @@
 			.modal-body
 				.date 
 					label Date
-					input(type="date") 
+					input(type="date")
 				.time-range 
 					.time 
 						label Time 
-						input(type="time")
+						input(type="time" placeholder="Checkin")
 					.time 
 						label Time 
-						input(type="time")
+						input(type="time"  placeholder="Checkout")
 				.info
 					img(src="./images/schedule-img.jpg", alt="")
 					.right 
 						.title Hotel Casa Camper
 						.des Carer d’Elisabet, 11, 09001 Barcel....
-				button Create
+				button.post(data-dismiss='modal') Create
