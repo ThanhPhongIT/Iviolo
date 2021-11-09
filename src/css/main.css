@@ -1202,7 +1202,8 @@ a {
             color: #ffffff;
             display: grid; }
             .packet-sale ul li .packet-box .box-txt_desc .box-desc_left img {
-              margin-bottom: 3px; }
+              margin-bottom: 3px;
+              width: auto; }
           .packet-sale ul li .packet-box .box-txt_desc .box-desc_right {
             width: 50%;
             z-index: 1;
