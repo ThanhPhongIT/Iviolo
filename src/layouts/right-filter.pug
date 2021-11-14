@@ -1,24 +1,33 @@
 .right-filter 
 	p.title-filter Filter setting
 	.filter-price 
-			p.title Price range
-			.progres-sprice
-				.progres-sprice_width 
-				.progres-sprice_before
-					.dot
-					span $50
-				.progres-sprice_after
-					.dot
-					span $1200
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+				<div id="slider-range"></div>
+				</div>
+			</div>
+			<div class="row slider-labels">
+				<div class="col-xs-6 caption">
+				<span id="slider-range-value1"></span>
+				<span id="slider-range-value2"></span>
+				</div>
+			</div>
+			
+		</div>
+			//- p.title Price range
+			//- .progres-sprice
+			//- 	.progres-sprice_width 
+			//- 	.progres-sprice_before
+			//- 		.dot
+			//- 		span $50
+			//- 	.progres-sprice_after
+			//- 		.dot
+			//- 		span $1200
 
 	.filter-review 
 		p.title Rating
-		.box-review 
-			img(src="./images/icon-review-star-active.png", alt="")
-			img(src="./images/icon-review-star-active.png", alt="")
-			img(src="./images/icon-review-star-active.png", alt="")
-			img(src="./images/icon-review-star-active.png", alt="")
-			img(src="./images/icon-review-star.png", alt="")
+		<div class="my-rating-filter" data-rating="2.5"></div>
 	
 	.filter-checkbox 
 		p.title Establishment Type

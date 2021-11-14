@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/star-rating-svg.css">
     <title></title>
     <link rel="stylesheet" href="css/main.css" attr>
   </head>
@@ -14,6 +15,7 @@
       <div class="container-fluid">
         <div class="header"> 
           <div class="col-left"> 
+            <div class="icon-nav show-in-mb"><img src="./images/icon-nav-menu.png" alt=""><img class="close" src="./images/icon-close-mobile.png" alt=""></div>
             <div class="logo"><a href="/"><img src="./images/logo.png" alt="logo"></a></div>
             <div class="box-search click-search">
               <input type="text" name="" placeholder="Search"><img src="./images/icon-search.png" alt="">
@@ -44,9 +46,11 @@
           </div>
           <div class="col-right"> 
             <ul class="header__option"> 
-              <li><a class="create-post" href="#" data-toggle="modal" data-target="#createPostModal"><img src="./images/icon-edit.png" alt=""><span>post</span></a></li>
-              <li> <a href="#"><img src="./images/icon-notifications.png" alt=""></a></li>
-              <li><a class="box-language" href="#"><img src="./images/icon-language.png" alt=""><span>EN</span></a></li>
+              <li class="hide-in-mb"><a class="create-post" href="#" data-toggle="modal" data-target="#createPostModal"><img src="./images/icon-edit.png" alt=""><span>post</span></a></li>
+              <li class="show-in-mb"><a href="#"><img src="./images/icon-search-mobile.png" alt=""></a></li>
+              <li> <a href="#"><img class="hide-in-mb" src="./images/icon-notifications.png" alt=""><img class="show-in-mb" src="./images/ion-notifications-menu.png" alt=""></a></li>
+              <li class="hide-in-mb"><a class="box-language" href="#"><img src="./images/icon-language.png" alt=""><span>EN</span></a></li>
+              <li class="show-in-mb icon-nav-category"><a href="#"><img src="./images/icon-nav-right.png" alt=""><img class="active" src="./images/icon-nav-right-active.png" alt=""></a></li>
             </ul>
           </div>
         </div>
@@ -142,41 +146,43 @@
               </div>
               <div class="col-right"> <span>Xem thêm</span><img src="./images/icon-arrow-right.png" alt=""></div>
             </div>
-            <ul>
-              <li>
-                <div class="packet-box">
-                  <div class="box-img"> <img src="./images/packet-sale.png" alt=""></div>
-                  <p class="packet-name">CUBA</p>
-                  <div class="box-txt_desc"> 
-                    <div class="box-desc_left"> <img class="local-airport_icon" src="./images/baseline-local_airport.png" alt=""><span class="local-airport_txt">Flight + 4 nights</span></div>
-                    <div class="box-desc_right"><span>$ 350</span></div>
+            <div class="sroll-x"> 
+              <ul>
+                <li>
+                  <div class="packet-box">
+                    <div class="box-img"> <img src="./images/packet-sale.png" alt=""></div>
+                    <p class="packet-name">CUBA</p>
+                    <div class="box-txt_desc"> 
+                      <div class="box-desc_left"> <img class="local-airport_icon" src="./images/baseline-local_airport.png" alt=""><span class="local-airport_txt">Flight + 4 nights</span></div>
+                      <div class="box-desc_right"><span>$ 350</span></div>
+                    </div>
                   </div>
-                </div>
-                <div class="packet_discount"><span>Up to</span><span class="value">50%</span><span>off</span></div>
-              </li>
-              <li>
-                <div class="packet-box">
-                  <div class="box-img"> <img src="./images/packet-sale.png" alt=""></div>
-                  <p class="packet-name">CUBA</p>
-                  <div class="box-txt_desc"> 
-                    <div class="box-desc_left"> <img class="local-airport_icon" src="./images/baseline-local_airport.png" alt=""><span class="local-airport_txt">Flight + 4 nights</span></div>
-                    <div class="box-desc_right"><span>$ 350</span></div>
+                  <div class="packet_discount"><span>Up to</span><span class="value">50%</span><span>off</span></div>
+                </li>
+                <li>
+                  <div class="packet-box">
+                    <div class="box-img"> <img src="./images/packet-sale.png" alt=""></div>
+                    <p class="packet-name">CUBA</p>
+                    <div class="box-txt_desc"> 
+                      <div class="box-desc_left"> <img class="local-airport_icon" src="./images/baseline-local_airport.png" alt=""><span class="local-airport_txt">Flight + 4 nights</span></div>
+                      <div class="box-desc_right"><span>$ 350</span></div>
+                    </div>
                   </div>
-                </div>
-                <div class="packet_discount"><span>Up to</span><span class="value">50%</span><span>off</span></div>
-              </li>
-              <li>
-                <div class="packet-box">
-                  <div class="box-img"> <img src="./images/packet-sale.png" alt=""></div>
-                  <p class="packet-name">CUBA</p>
-                  <div class="box-txt_desc"> 
-                    <div class="box-desc_left"> <img class="local-airport_icon" src="./images/baseline-local_airport.png" alt=""><span class="local-airport_txt">Flight + 4 nights</span></div>
-                    <div class="box-desc_right"><span>$ 350</span></div>
+                  <div class="packet_discount"><span>Up to</span><span class="value">50%</span><span>off</span></div>
+                </li>
+                <li>
+                  <div class="packet-box">
+                    <div class="box-img"> <img src="./images/packet-sale.png" alt=""></div>
+                    <p class="packet-name">CUBA</p>
+                    <div class="box-txt_desc"> 
+                      <div class="box-desc_left"> <img class="local-airport_icon" src="./images/baseline-local_airport.png" alt=""><span class="local-airport_txt">Flight + 4 nights</span></div>
+                      <div class="box-desc_right"><span>$ 350</span></div>
+                    </div>
                   </div>
-                </div>
-                <div class="packet_discount"><span>Up to</span><span class="value">50%</span><span>off</span></div>
-              </li>
-            </ul>
+                  <div class="packet_discount"><span>Up to</span><span class="value">50%</span><span>off</span></div>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="box-post">
             <div class="post-author"> 
@@ -402,10 +408,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -658,10 +662,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -915,10 +917,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -1172,10 +1172,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -1436,10 +1434,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -1698,10 +1694,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -1965,10 +1959,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -2224,10 +2216,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -2493,10 +2483,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -2761,10 +2749,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -3029,10 +3015,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -3299,10 +3283,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="post_box-comment"> 
-                <div class="post_review">
-                  <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                </div>
+              <div class="post_box-comment">
+                 <div class="my-rating-post" data-rating="2.5"></div>
                 <div class="post_comment"> 
                   <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                 </div>
@@ -3335,21 +3317,23 @@
       </div>
       <div class="right-filter"> 
         <p class="title-filter">Filter setting</p>
-        <div class="filter-price"> 
-          <p class="title">Price range</p>
-          <div class="progres-sprice">
-            <div class="progres-sprice_width"> </div>
-            <div class="progres-sprice_before">
-              <div class="dot"></div><span>$50</span>
-            </div>
-            <div class="progres-sprice_after">
-              <div class="dot"></div><span>$1200</span>
-            </div>
-          </div>
+        <div class="filter-price">
+           <div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div id="slider-range"></div>
+</div>
+</div>
+<div class="row slider-labels">
+<div class="col-xs-6 caption">
+<span id="slider-range-value1"></span>
+<span id="slider-range-value2"></span>
+</div>
+</div>
+</div>
         </div>
         <div class="filter-review"> 
-          <p class="title">Rating</p>
-          <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
+          <p class="title">Rating</p><div class="my-rating-filter" data-rating="2.5"></div>
         </div>
         <div class="filter-checkbox"> 
           <p class="title">Establishment Type</p>
@@ -3621,10 +3605,8 @@
                     </ul>
                   </div>
                 </div>
-                <div class="post_box-comment"> 
-                  <div class="post_review">
-                    <div class="box-review"> <img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star-active.png" alt=""><img src="./images/icon-review-star.png" alt=""></div>
-                  </div>
+                <div class="post_box-comment">
+                   <div class="my-rating-post" data-rating="2.5"></div>
                   <div class="post_comment"> 
                     <button> <img src="./images/icon-comment.png" alt=""><span>102 Comment</span></button>
                   </div>
@@ -3661,6 +3643,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/a7f9139fa6.js" crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.star-rating-svg.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

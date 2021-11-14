@@ -2,8 +2,8 @@ extends master.pug
 block css
 	link(rel="stylesheet", href="css/main.css", attr)
 block content
+	include ./components/Carousel-tag/carousel-tag.pug
 	.container
-		include ./components/Carousel-tag/carousel-tag.pug
 		include ./components/Post/box-style-4-2.pug
 		include ./components/Post/box-style-5.pug
 		include ./components/Post/box-style-5-1.pug
