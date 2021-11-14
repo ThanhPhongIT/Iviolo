@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 11111;
+    z-index: 2222222;
     .view-post_box-img{
         width: calc(100% - 352px);
         position: relative;
@@ -170,4 +170,7 @@
         display: inline-block;
         cursor: pointer;
     }
+}
+.modal {
+    z-index: 2222;
 }
