@@ -243,7 +243,7 @@ header {
   background: #ffffff;
   box-shadow: 8px 1px 6px rgba(200, 204, 217, 0.4);
   height: 54px;
-  z-index: 11111;
+  z-index: 1111;
   position: fixed;
   top: 0;
   left: 0;
@@ -2166,7 +2166,7 @@ span#slider-range-value1, span#slider-range-value2 {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 11111; }
+  z-index: 2222222; }
   .view-post .view-post_box-img {
     width: calc(100% - 352px);
     position: relative; }
@@ -2288,6 +2288,9 @@ span#slider-range-value1, span#slider-range-value2 {
     left: 16px;
     display: inline-block;
     cursor: pointer; }
+
+.modal {
+  z-index: 2222; }
 
 .comment {
   padding: 16px 0 14px 0;
