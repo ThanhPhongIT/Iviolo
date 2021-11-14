@@ -1,6 +1,13 @@
 .post-author{
     position: relative;
     padding: 14px 42px 10px 16px;
+    @include mobile{
+        padding: 13px 10px 11px 10px;
+        div {
+            display: flex;
+            align-items: center;
+        }  
+    }
     span{
         vertical-align: middle;
     }
@@ -10,6 +17,10 @@
         font-size: 18px;
         line-height: 25px;
         color: #676262;
+        @include mobile{
+            font-size: 14px;
+            line-height: 15px;
+        }
     }
     span.dot-active{
         background: #42EC72;
@@ -18,12 +29,21 @@
         display: inline-block;
         border-radius: 50%;
         margin: 0 8px;
+        @include mobile{
+            margin: 0 4px;
+            height: 8px;
+            width: 8px;
+        }
     }
     span.author_last-time{
         font-size: 14px;
         line-height: 19px;
         font-family: NotoSans-Regular;
         color: #969EB4;
+        @include mobile{
+            font-size: 12px;
+            line-height: 13px;
+        }
     }
 }
 .post_icon-more{
@@ -32,4 +52,8 @@
     right: 16px;
     cursor: pointer;
     z-index: 1;
+    @include mobile{
+        right: 6px;
+        max-width: 20px;
+    }
 }

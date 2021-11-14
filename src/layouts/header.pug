@@ -1,44 +1,55 @@
 header
-  .container-fluid
-    .header 
-      .col-left 
-        .logo
-          a(href="/")
-            img(src="./images/logo.png", alt="logo") 
-        .box-search.click-search
-          input(type="text", name="", placeholder="Search")
-          img(src="./images/icon-search.png", alt="")
-          include ./modal-search.pug
-      .col-center 
-        ul.header__menu
-            li.active
-              a(href="index.html") 
-                img(src="./images/icon-home.png", alt="")
-                img.active(src="./images/icon-home-active.png", alt="")
-            li
-              a(href="single-travel.html") 
-                img(src="./images/icon-location.png", alt="")
-                img.active(src="./images/icon-location-active.png", alt="")
-            li
-              a(href="single-food.html") 
-                img(src="./images/icon-food.png", alt="")
-                img.active(src="./images/icon-food-active.png", alt="")
-            li
-              a(href="profile.html") 
-                img(src="./images/icon-profile.png", alt="")
-                img.active(src="./images/icon-profile-active.png", alt="")
-      .col-right 
-        ul.header__option 
-          li
-            a.create-post(href="#", data-toggle='modal', data-target='#createPostModal')
-              img(src="./images/icon-edit.png", alt="")
-              span post
-          li 
-            a(href="#")
-              img(src="./images/icon-notifications.png", alt="") 
-          li
-            a.box-language(href="#")
-              img(src="./images/icon-language.png", alt="") 
-              span EN
+	.container-fluid
+		.header 
+			.col-left 
+				.icon-nav.show-in-mb
+					img(src="./images/icon-nav-menu.png", alt="")
+					img.close(src="./images/icon-close-mobile.png", alt="")
+				.logo
+					a(href="/")
+						img(src="./images/logo.png", alt="logo") 
+				.box-search.click-search
+					input(type="text", name="", placeholder="Search")
+					img(src="./images/icon-search.png", alt="")
+					include ./modal-search.pug
+			.col-center 
+				ul.header__menu
+						li.active
+							a(href="index.html") 
+								img(src="./images/icon-home.png", alt="")
+								img.active(src="./images/icon-home-active.png", alt="")
+						li
+							a(href="single-travel.html") 
+								img(src="./images/icon-location.png", alt="")
+								img.active(src="./images/icon-location-active.png", alt="")
+						li
+							a(href="single-food.html") 
+								img(src="./images/icon-food.png", alt="")
+								img.active(src="./images/icon-food-active.png", alt="")
+						li
+							a(href="profile.html") 
+								img(src="./images/icon-profile.png", alt="")
+								img.active(src="./images/icon-profile-active.png", alt="")
+			.col-right 
+				ul.header__option 
+					li.hide-in-mb
+						a.create-post(href="#", data-toggle='modal', data-target='#createPostModal')
+							img(src="./images/icon-edit.png", alt="")
+							span post
+					li.show-in-mb
+						a(href="#")
+							img(src="./images/icon-search-mobile.png", alt="") 
+					li 
+						a(href="#")
+							img.hide-in-mb(src="./images/icon-notifications.png", alt="") 
+							img.show-in-mb(src="./images/ion-notifications-menu.png", alt="") 
+					li.hide-in-mb
+						a.box-language(href="#")
+							img(src="./images/icon-language.png", alt="") 
+							span EN
+					li.show-in-mb.icon-nav-category
+						a(href="#")
+							img(src="./images/icon-nav-right.png", alt="") 
+							img.active(src="./images/icon-nav-right-active.png", alt="")
 include ./modal-create-post.pug
 

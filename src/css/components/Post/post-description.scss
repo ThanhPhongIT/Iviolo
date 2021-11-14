@@ -6,6 +6,9 @@
         justify-content: space-between;
         font-family: NotoSans-Regular;
         margin-bottom: 13px;
+        @include mobile{
+            margin-bottom: 4px;
+        }
         .col-left{
             .post-title{
                 font-weight: 600;
@@ -13,6 +16,10 @@
                 line-height: 27px;
                 color: #1ECBC1;
                 margin-bottom: 9px;
+                @include mobile{
+                    font-size: 16px;
+                    line-height: 17px;
+                }
             }
             .post-address{
                 font-weight: 600;
@@ -21,11 +28,19 @@
                 display: flex;
                 align-items: center;
                 color: #969EB4;
+                @include mobile{
+                    font-size: 12px;
+                    line-height: 13px;
+                }    
             }
         }
         .col-right {
             display: flex;
             align-items: flex-end;
+            @include mobile{
+                align-items: center;
+                height: 16px;
+            }
             a.btn-taxi{
                 background: #E8FBFC;
                 border-radius: 16px;
@@ -37,8 +52,23 @@
                 font-size: 14px;
                 line-height: 19px;
                 color: #2A2C34;
+                @include mobile{
+                    font-size: 10px;
+                    line-height: 10px;
+                    margin-left: 11px;
+                    width: max-content;
+                }
                 img{
                     margin-right: 8px;
+                    @include mobile{
+                        max-width: 15px;
+                        margin-right: 4px;
+                    }
+                }
+            }
+            @include mobile{
+                .btn-map img{
+                    max-width: 24px;
                 }
             }
         }
@@ -54,6 +84,10 @@
             line-height: 22px;
             color: #7B7B7B;
             margin-bottom: 9px;
+            @include mobile{
+                font-size: 12px;
+                line-height: 13px;
+            }
             span.read-more{
                 color: #1ECBC1;
                 cursor: pointer;
@@ -71,6 +105,10 @@
                 display: flex;
                 align-items: center;
                 color: #2A2C34;
+                @include mobile{
+                    font-size: 12px;
+                    line-height: 13px;
+                }
                 img{
                     margin-left: 4px;
                 }
@@ -104,6 +142,9 @@
                     &.book-ship button{
                         margin-right: 13px;
                         border: 1px solid #D6F6F2;
+                        @include mobile{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -123,8 +164,23 @@
             align-items: center;
             color: #7B7B7B;
             font-family: Segoe UI;
+            @include mobile{
+                font-size: 12px;
+                line-height: 13px;
+            }
             img{
                 margin-right: 12px;
+                @include mobile{
+                    max-width: 20px;
+                    margin-right: 8px;
+                }
+            }
+        }
+        .box-review{
+            img{
+                @include mobile{
+                    width: 18px;
+                }
             }
         }
     }
