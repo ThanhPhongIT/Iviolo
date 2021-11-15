@@ -54,6 +54,10 @@
     font-size: 16px;
     line-height: 17px;
     color: #000;
+    @include mobile{
+      width: 343px;
+height: 46px;
+    }
   }
   input[type="number"] {
     background: url(../../images/dollar.svg) no-repeat scroll calc(100% - 10px)
@@ -140,5 +144,13 @@
   /* Firefox */
   input[type="number"] {
     -moz-appearance: textfield;
+  }
+  .des{
+    display: flex;
+    justify-content: space-between;
+    @include mobile{
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }

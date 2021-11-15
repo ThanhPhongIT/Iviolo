@@ -1,6 +1,9 @@
 #modalActionPost {
   z-index: 10000000;
   width: 610px;
+  @include mobile {
+   width: 343px;
+  }
   left: 50%;
   transform: translateX(-50%);
   .modal-content {
@@ -23,6 +26,13 @@
         color: #676262;
         border-bottom: 1px solid #c8ccd9;
         cursor: pointer;
+        @include mobile{
+          font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 17px;
+height: 66px;
+        }
       }
     }
   }

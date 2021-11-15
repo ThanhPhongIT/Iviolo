@@ -3,8 +3,16 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 100000;
+  @include mobile{
+    width: 100vw;
+    height: 100vh;
+  }
   .modal-content {
     border-radius: 16px;
+    @include mobile{
+      border-radius: 0 !important;
+      width: 100% !important;
+    }
   }
   .btn-post {
     width: 352px;
@@ -34,6 +42,9 @@
     align-items: center;
     border: none;
     border-radius: 16px 16px 0 0;
+    @include mobile{
+      border-radius: 0 !important;
+    }
     background: linear-gradient(
       90deg,
       #dee8f5 0%,
