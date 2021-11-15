@@ -64,25 +64,25 @@ $(document).ready(function(){
   // end toggle form comment
 
   // start config rating
-  $(".my-rating-post").starRating({
-    totalStars: 5,
-    emptyColor: '#C8CCD9',
-    hoverColor: '#EFB41E',
-    activeColor: '#EFB41E',
-    strokeWidth: 0,
-    starSize: 18,
-    useGradient: false
+  $("#rateYo").rateYo({
+    rating: 3.5,
+    starWidth: "28px",
+    numStars: 5,
+    halfStar: true,
+    spacing: "8px",
+    normalFill: '#C8CCD9',
+    ratedFill: '#EFB41E'
   });
-
-  $(".my-rating-filter").starRating({
-    totalStars: 5,
-    emptyColor: '#C8CCD9',
-    hoverColor: '#EFB41E',
-    activeColor: '#EFB41E',
-    strokeWidth: 0,
-    starSize: 28,
-    useGradient: false
+  $(".rating-star").rateYo({
+    rating: 3.5,
+    starWidth: "16px",
+    numStars: 5,
+    halfStar: true,
+    spacing: "4px",
+    normalFill: '#C8CCD9',
+    ratedFill: '#EFB41E'
   });
+  
   // end config rating
 
 
@@ -90,6 +90,9 @@ $(document).ready(function(){
   $(".icon-nav").click(function(){
     $(this).toggleClass("active");
     $('.left-sidebar').toggleClass("show-menu");
+    $('.logo').toggleClass("top300");
+    $('.col-right').toggleClass("top300");
+    $('.btn-create-post').toggleClass("active");
   });
   // end toggle nav menu
 

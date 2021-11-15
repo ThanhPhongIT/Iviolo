@@ -6,7 +6,7 @@ header {
   background: #ffffff;
   box-shadow: 8px 1px 6px rgba(200, 204, 217, 0.4);
   height: 54px;
-  z-index: 1111;
+  z-index: 111;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,6 +29,7 @@ header {
       display: flex;
       align-items: center;
       .logo {
+        transition: all 0.5s;
         img {
           width: 100%;
           max-width: 88px;
@@ -138,6 +139,7 @@ header {
       }
     }
     .col-right {
+      transition: all 0.5s;
       .header__option {
         display: flex;
         align-items: center;
@@ -191,6 +193,40 @@ header {
           }
         }
       }
+    }
+    .btn-create-post{
+      transform: translateX(300%);
+      transition: all 0.5s;
+      width: 0;
+      overflow: hidden;
+      &.active{
+        transform: unset;
+        width: 100%;
+        display: inline-flex;
+        justify-content: end;
+      }
+      button{
+        background: #1ECBC1;
+        border-radius: 16px;
+        width: 85px;
+        height: 32px;
+        padding: 17px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        span{
+          margin-left: 6px;
+        }
+      }
+    }
+    .top300{
+      transform: translateY(-300%);
+      opacity: 0;
+      width: 0;
     }
   }
 }
