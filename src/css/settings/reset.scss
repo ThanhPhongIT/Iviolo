@@ -60,3 +60,8 @@ label,p,ul,li{
 body {
   font-family: Regular, sans-serif !important;
 }
+button{
+  &:focus{
+    outline: none !important;
+  }
+}
