@@ -37,6 +37,9 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 0 !important;
+  @include mobile{
+    flex-wrap: wrap;
+  }
   .left-sidebar {
     width: 320px;
     position: fixed;
@@ -69,14 +72,18 @@ main {
     transition: all 0.5s;
     @include mobile{
       background: #fff;
-      z-index: 111;
-      right: -100%;
+      z-index: -111;
       width: 100%;
-      min-height: 100vh;
+      min-height: unset;
+      position: relative;
+      display: none;
+      order: 1;
+      margin-top: 3px;
       &.show-filter{
         z-index: 111;
-        right: 0;
-        width: 100%;
+        opacity: 1;
+        width: 100%;   
+        display: block;
       }
     }
   }
@@ -93,6 +100,9 @@ main {
 
 }
 .main-content {
+  @include mobile{
+    order: 2;
+  }
   .container {
     width: 100%;
     max-width: 594px;

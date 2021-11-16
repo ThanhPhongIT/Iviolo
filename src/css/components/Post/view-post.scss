@@ -187,17 +187,17 @@
             display: none;
         }
     }
-    .show-in-mb {
-        display: block !important;
-    }
     .icon-back{
         padding-left: 16px;
         height: 51px;
         width: 100%;
         box-shadow: 8px 1px 6px rgba(200, 204, 217, 0.4);
         margin-bottom: 3px;
-        display: flex !important;
+        display: none;
         align-items: center;
+        @include mobile{
+            display: flex;
+        }
     }
     .view-post_box-img-mobile{
         background: #fff;
