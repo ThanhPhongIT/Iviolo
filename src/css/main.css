@@ -458,19 +458,28 @@ a {
     position: absolute;
     bottom: 10%;
     font-weight: 800;
-    display: inline-block;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     border: 1px solid #C8CCD9;
     width: 161px;
     height: 42px;
     border-radius: 12px;
-    padding: 0 15px; }
-    .left-sidebar .language-mb span {
-      margin-left: 10px; }
+    padding: 0 15px;
+    display: none; }
+    @media (max-width: 426px) {
+      .left-sidebar .language-mb {
+        display: flex; } }
+    .left-sidebar .language-mb select.language-select {
+      width: 100%;
+      background-image: url(../images/icon-language.png);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 20px;
+      padding-left: 25px;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 17px;
+      color: #676262; }
 
 .right-filter {
   padding: 16px; }
@@ -2446,16 +2455,17 @@ span#slider-range-value1, span#slider-range-value2 {
     @media (max-width: 426px) {
       .view-post span.close-post {
         display: none; } }
-  .view-post .show-in-mb {
-    display: block !important; }
   .view-post .icon-back {
     padding-left: 16px;
     height: 51px;
     width: 100%;
     box-shadow: 8px 1px 6px rgba(200, 204, 217, 0.4);
     margin-bottom: 3px;
-    display: flex !important;
+    display: none;
     align-items: center; }
+    @media (max-width: 426px) {
+      .view-post .icon-back {
+        display: flex; } }
   .view-post .view-post_box-img-mobile {
     background: #fff; }
     .view-post .view-post_box-img-mobile .box-img {
@@ -2978,6 +2988,9 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 0 !important; }
+  @media (max-width: 426px) {
+    main {
+      flex-wrap: wrap; } }
   main .left-sidebar {
     width: 320px;
     position: fixed;
@@ -3009,14 +3022,18 @@ main {
     @media (max-width: 426px) {
       main .right-filter {
         background: #fff;
-        z-index: 111;
-        right: -100%;
+        z-index: -111;
         width: 100%;
-        min-height: 100vh; }
+        min-height: unset;
+        position: relative;
+        display: none;
+        order: 1;
+        margin-top: 3px; }
         main .right-filter.show-filter {
           z-index: 111;
-          right: 0;
-          width: 100%; } }
+          opacity: 1;
+          width: 100%;
+          display: block; } }
   main .main-content {
     width: calc(100% - 320px - 320px);
     background: #f9faff;
@@ -3026,6 +3043,10 @@ main {
     @media (max-width: 426px) {
       main .main-content {
         width: 100%; } }
+
+@media (max-width: 426px) {
+  .main-content {
+    order: 2; } }
 
 .main-content .container {
   width: 100%;

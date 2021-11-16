@@ -103,6 +103,11 @@ $(document).ready(function(){
   });
   // end toggle nav filter
 
+  $(".post-image").click(function(){
+    $(".slick-next").click();
+    $(".slick-prev").click();
+  });
+
 });
 
 
