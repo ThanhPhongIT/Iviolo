@@ -1450,9 +1450,11 @@ span#slider-range-value1, span#slider-range-value2 {
         display: flex;
         align-items: center;
         color: #2a2c34;
+        flex-wrap: wrap;
         padding-bottom: 32px; }
         .wrapper-login .content .right .des a {
-          color: #1ecbc1; }
+          color: #1ecbc1;
+          padding: 0 10px; }
       .wrapper-login .content .right form .form-group label {
         font-style: normal;
         font-weight: normal;
@@ -1862,9 +1864,11 @@ span#slider-range-value1, span#slider-range-value2 {
         display: flex;
         align-items: center;
         color: #2a2c34;
+        flex-wrap: wrap;
         padding-bottom: 32px; }
         .wrapper-login .content .right .des a {
-          color: #1ecbc1; }
+          color: #1ecbc1;
+          padding: 0 10px; }
       .wrapper-login .content .right form .form-group label {
         font-style: normal;
         font-weight: normal;
@@ -2585,11 +2589,26 @@ span#slider-range-value1, span#slider-range-value2 {
         width: 50px; } }
   .carousel-tag .slick-prev {
     left: 0; }
+    .carousel-tag .slick-prev::before {
+      content: '';
+      background: linear-gradient(90deg, #BFF3E8 77.66%, rgba(191, 243, 232, 0) 101.39%);
+      transform: rotate(-180deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+    .carousel-tag .slick-prev img {
+      z-index: 2; }
   .carousel-tag .slick-next {
     right: 0; }
     .carousel-tag .slick-next::before {
       content: '';
-      background: linear-gradient(90deg, #BFF3E8 66.66%, #000000 101.39%);
+      background: linear-gradient(90deg, #BFF3E8 77.66%, rgba(191, 243, 232, 0) 101.39%);
       transform: rotate(-180deg);
       position: absolute;
       top: 0;
@@ -2602,6 +2621,9 @@ span#slider-range-value1, span#slider-range-value2 {
       z-index: 1; }
     .carousel-tag .slick-next img {
       z-index: 2; }
+  @media (max-width: 426px) {
+    .carousel-tag .slick-list .list {
+      margin-bottom: 0; } }
 
 .wrapper-pro-cont {
   margin: 0 32px; }

@@ -14,6 +14,12 @@ $(document).ready(function(){
     nextArrow:
       '<button class="slide-arrow slick-next"><img src="images/icon-carousel-next.png"></button>',
   });
+  $('.slick-next').on('mouseover',function(){
+    $(".variable-width").slick('slickNext');
+    });
+    $('.slick-prev').on('mouseover',function(){
+      $(".variable-width").slick('slickPrev');
+      });
 
   $(".slider-for").slick({
     slidesToShow: 1,

@@ -91,9 +91,12 @@
         display: flex;
         align-items: center;
         color: #2a2c34;
+        
+    flex-wrap: wrap;
 
         a {
           color: #1ecbc1;
+          padding: 0 10px;
         }
         padding-bottom: 32px;
       }
