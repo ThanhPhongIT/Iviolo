@@ -105,6 +105,13 @@ $(document).ready(function(){
     $(".slick-prev").click();
   });
 
+  $(".slick-next").mousemove(function(event){
+    $(this).click();
+  });
+  $(".slick-prev").mousemove(function(event){
+    $(this).click();
+  });
+
 });
 
 
