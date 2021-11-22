@@ -1,0 +1,15 @@
+[debug] [2021-11-22T01:08:46.361Z] ----------------------------------------------------------------------
+[debug] [2021-11-22T01:08:46.365Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\phong\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2021-11-22T01:08:46.365Z] CLI Version:   9.16.0
+[debug] [2021-11-22T01:08:46.366Z] Platform:      win32
+[debug] [2021-11-22T01:08:46.366Z] Node Version:  v14.17.3
+[debug] [2021-11-22T01:08:46.386Z] Time:          Mon Nov 22 2021 08:08:46 GMT+0700 (Indochina Time)
+[debug] [2021-11-22T01:08:46.386Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-22T01:08:46.389Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-11-22T01:08:46.517Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-22T01:08:46.517Z] > authorizing via signed-in user (anhtrang2080@gmail.com)
+[debug] [2021-11-22T01:08:46.517Z] [iam] checking project iviolo-demo for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-11-22T01:08:46.518Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-22T01:08:46.519Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
