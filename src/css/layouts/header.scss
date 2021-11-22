@@ -229,4 +229,19 @@ header {
       width: 0;
     }
   }
+  .language-mb {
+    min-width: 70px;
+    select.language-select {
+        width: 100%;
+        background-image: url(../images/icon-language.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 20px;
+        padding-left: 25px;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 17px;
+        color: #676262;
+    }
+}
 }
