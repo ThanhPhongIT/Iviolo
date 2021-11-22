@@ -42,6 +42,7 @@
       background-size: cover;
       padding-top: 63px;
       padding-left: 96px;
+      display: block;
       @include mobile {
         display: none;
         width: 0;
