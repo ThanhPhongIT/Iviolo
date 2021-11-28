@@ -40,12 +40,15 @@ main {
   @include mobile{
     flex-wrap: wrap;
   }
+  &.container-fluid{
+    max-width: 1440px;
+  }
   .left-sidebar {
     width: 320px;
     position: fixed;
     min-height: 100vh;
     top: 54px;
-    left: 0;
+    right: calc(50% + 400px);
     z-index: 1;
     transition: all 0.7s;
     @include mobile{
@@ -67,7 +70,7 @@ main {
     position: fixed;
     min-height: 100vh;
     top: 54px;
-    right: 0;
+    left: calc(50% + 400px);
     z-index: 1;
     transition: all 0.5s;
     @include mobile{

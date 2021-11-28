@@ -97,6 +97,20 @@
         }
     }
     
+    a {
+      color: $primary;
+      font-size: 16px;
+    }
+    .icon-mess {
+      position: absolute;
+      bottom: 80px;
+      right: 47px;
+      z-index: 10;
+      cursor: pointer;
+      @include mobile{
+        display: none;
+      }
+    }
 }
 
 .slider-labels {

@@ -252,7 +252,8 @@ header {
   left: 0;
   width: 100%; }
   header .container-fluid {
-    padding: 11px 32px 11px 16px; }
+    padding: 11px 32px 11px 16px;
+    max-width: 1440px; }
     @media (max-width: 426px) {
       header .container-fluid {
         padding: 11px 16px; } }
@@ -437,20 +438,6 @@ header {
       line-height: 17px;
       color: #676262; }
 
-a {
-  color: #007bff;
-  font-size: 16px; }
-
-.icon-mess {
-  position: fixed;
-  bottom: 47px;
-  right: 47px;
-  z-index: 10;
-  cursor: pointer; }
-  @media (max-width: 426px) {
-    .icon-mess {
-      display: none; } }
-
 .left-sidebar {
   padding: 16px; }
   .left-sidebar li {
@@ -571,6 +558,18 @@ a {
     cursor: pointer; }
     .right-filter .filter-checkbox .show-more img {
       margin-left: 9px; }
+  .right-filter a {
+    color: #007bff;
+    font-size: 16px; }
+  .right-filter .icon-mess {
+    position: absolute;
+    bottom: 80px;
+    right: 47px;
+    z-index: 10;
+    cursor: pointer; }
+    @media (max-width: 426px) {
+      .right-filter .icon-mess {
+        display: none; } }
 
 .slider-labels {
   margin-top: 10px; }
@@ -1313,7 +1312,7 @@ span#slider-range-value1, span#slider-range-value2 {
     -moz-appearance: textfield; }
   .form-post .des {
     display: flex;
-    justify-content: space-between; }
+    justify-content: flex-start; }
     @media (max-width: 426px) {
       .form-post .des {
         flex-direction: column;
@@ -1418,7 +1417,8 @@ span#slider-range-value1, span#slider-range-value2 {
       background-repeat: no-repeat;
       background-size: cover;
       padding-top: 63px;
-      padding-left: 96px; }
+      padding-left: 96px;
+      display: block; }
       @media (max-width: 426px) {
         .wrapper-login .content .left {
           display: none;
@@ -1924,7 +1924,8 @@ span#slider-range-value1, span#slider-range-value2 {
       background-repeat: no-repeat;
       background-size: cover;
       padding-top: 63px;
-      padding-left: 96px; }
+      padding-left: 96px;
+      display: block; }
       @media (max-width: 426px) {
         .wrapper-login .content .left {
           display: none;
@@ -3210,12 +3211,14 @@ main {
   @media (max-width: 426px) {
     main {
       flex-wrap: wrap; } }
+  main.container-fluid {
+    max-width: 1440px; }
   main .left-sidebar {
     width: 320px;
     position: fixed;
     min-height: 100vh;
     top: 54px;
-    left: 0;
+    right: calc(50% + 400px);
     z-index: 1;
     transition: all 0.7s; }
     @media (max-width: 426px) {
@@ -3235,7 +3238,7 @@ main {
     position: fixed;
     min-height: 100vh;
     top: 54px;
-    right: 0;
+    left: calc(50% + 400px);
     z-index: 1;
     transition: all 0.5s; }
     @media (max-width: 426px) {

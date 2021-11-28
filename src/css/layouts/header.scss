@@ -13,6 +13,7 @@ header {
   width: 100%;
   .container-fluid {
     padding: 11px 32px 11px 16px;
+    max-width: 1440px;
     @include mobile{
       padding: 11px 16px;
     }
