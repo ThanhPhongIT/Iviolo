@@ -1,0 +1,13 @@
+[debug] [2021-11-29T16:43:33.012Z] ----------------------------------------------------------------------
+[debug] [2021-11-29T16:43:33.014Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\phong\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2021-11-29T16:43:33.015Z] CLI Version:   9.16.0
+[debug] [2021-11-29T16:43:33.015Z] Platform:      win32
+[debug] [2021-11-29T16:43:33.015Z] Node Version:  v14.17.3
+[debug] [2021-11-29T16:43:33.015Z] Time:          Mon Nov 29 2021 23:43:33 GMT+0700 (Indochina Time)
+[debug] [2021-11-29T16:43:33.015Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-29T16:43:33.081Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-29T16:43:33.081Z] > authorizing via signed-in user (anhtrang2080@gmail.com)
+[debug] [2021-11-29T16:43:33.081Z] [iam] checking project iviolo-demo for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-11-29T16:43:33.083Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/iviolo-demo:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
