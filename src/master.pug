@@ -10,6 +10,8 @@ html(lang="en")
         title
         block css
     body
+        block nav 
+          - var active = 'index'
         include ./layouts/header.pug
         main.container-fluid
           include ./layouts/right-filter.pug

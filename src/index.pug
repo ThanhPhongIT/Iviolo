@@ -1,6 +1,8 @@
 extends master.pug
 block css
 	link(rel="stylesheet", href="css/main.css", attr)
+block nav 
+	- var active = 'index'
 block content
 	.container
 		include ./components/Home/packet-sale.pug

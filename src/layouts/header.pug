@@ -14,19 +14,19 @@ header
 					include ./modal-search.pug
 			.col-center 
 				ul.header__menu
-						li.active
+						li(class=(active === 'index' ? "active": undefined))
 							a(href="index.html") 
 								img(src="./images/icon-home.png", alt="")
 								img.active(src="./images/icon-home-active.png", alt="")
-						li
+						li(class=(active === 'single-travel' ? "active": undefined))
 							a(href="single-travel.html") 
 								img(src="./images/icon-location.png", alt="")
 								img.active(src="./images/icon-location-active.png", alt="")
-						li
+						li(class=(active === 'single-food' ? "active": undefined))
 							a(href="single-food.html") 
 								img(src="./images/icon-food.png", alt="")
 								img.active(src="./images/icon-food-active.png", alt="")
-						li
+						li(class=(active === 'profile' ? "active": undefined))
 							a(href="profile.html") 
 								img(src="./images/icon-profile.png", alt="")
 								img.active(src="./images/icon-profile-active.png", alt="")
