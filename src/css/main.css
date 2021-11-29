@@ -2441,9 +2441,16 @@ span#slider-range-value1, span#slider-range-value2 {
         .post-description .post_box-desc .post_content {
           font-size: 12px;
           line-height: 13px; } }
+      .post-description .post_box-desc .post_content .text-height {
+        -webkit-line-clamp: 2;
+        height: 47px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden; }
       .post-description .post_box-desc .post_content span.read-more {
         color: #1ECBC1;
-        cursor: pointer; }
+        cursor: pointer;
+        display: none; }
     .post-description .post_box-desc .post-option {
       display: flex;
       align-items: center;
