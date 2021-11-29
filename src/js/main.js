@@ -121,6 +121,23 @@ $(document).ready(function(){
     $(this).click();
   });
 
+  var heightPostContentSpan = $(".post-description .post_box-desc .post_content span.text").height();
+  if(heightPostContentSpan > 50){
+    $(".post-description .post_box-desc .post_content span.text").addClass("text-height");
+    $(".post-description .post_box-desc .post_content .read-more").css("display", "inline-block");
+
+
+    $(".post-description .post_box-desc .post_content .read-more").click(function(){
+      $(".post-description .post_box-desc .post_content span.text").removeClass("text-height");
+      $(this).hide();
+    });
+
+  }
+  console.log(heightPostContentSpan);
+  // $(".post-description .post_box-desc .post_content span.text").click(function(){
+  //   alert("Height of div: " + $("div").height());
+  // });
+
 });
 
 
