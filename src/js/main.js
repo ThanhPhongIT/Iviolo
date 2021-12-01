@@ -128,7 +128,7 @@ $(document).ready(function(){
 
 
     $(".post-description .post_box-desc .post_content .read-more").click(function(){
-      $(".post-description .post_box-desc .post_content span.text").removeClass("text-height");
+      $(this).parents(".post_content").addClass("show-readmore");
       $(this).hide();
     });
 

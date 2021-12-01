@@ -95,6 +95,7 @@
                 -webkit-box-orient: vertical;
                 overflow: hidden;
             }
+            
             span.read-more{
                 color: #1ECBC1;
                 cursor: pointer;
@@ -192,4 +193,11 @@
             }
         }
     }
+}
+.show-readmore .text-height{
+    -webkit-line-clamp: unset !important;
+    height: unset !important;
+    display: unset !important;
+    -webkit-box-orient: unset !important;
+    overflow: unset !important;
 }

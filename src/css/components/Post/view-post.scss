@@ -209,6 +209,10 @@
 .modal {
     z-index: 2222;
 }
+#modalViewPost .modal-dialog.modal-lg {
+    max-width: 100% !important;
+}
+
 #modalViewPost{
     .modal-dialog{
         margin: 0;
@@ -226,5 +230,6 @@
                 }        
             } 
         }
+        
     }
 }

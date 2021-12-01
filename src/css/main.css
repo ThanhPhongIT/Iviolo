@@ -2523,6 +2523,13 @@ span#slider-range-value1, span#slider-range-value2 {
       .post-description .post_box-comment .box-review img {
         width: 18px; } }
 
+.show-readmore .text-height {
+  -webkit-line-clamp: unset !important;
+  height: unset !important;
+  display: unset !important;
+  -webkit-box-orient: unset !important;
+  overflow: unset !important; }
+
 .view-post {
   display: flex;
   flex-wrap: wrap;
@@ -2685,6 +2692,9 @@ span#slider-range-value1, span#slider-range-value2 {
 
 .modal {
   z-index: 2222; }
+
+#modalViewPost .modal-dialog.modal-lg {
+  max-width: 100% !important; }
 
 #modalViewPost .modal-dialog {
   margin: 0; }
