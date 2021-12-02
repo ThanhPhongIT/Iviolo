@@ -50,7 +50,7 @@ $(document).ready(function(){
     focusOnSelect: true,
     lazyLoad: 'ondemand',
     prevArrow: '<button class="slide-arrow slick-prev"><i class="fas fa-chevron-left"></i></button>',
-    nextArrow: '<button class="slide-arrow slick-next"><i class="fas fa-chevron-right"></i></button>'
+    nextArrow: '<button class="slide-arrow slick-next"><i class="fas fa-chevron-right"></i></button>',
   });          
 
   // end custom button slider post
@@ -128,7 +128,7 @@ $(document).ready(function(){
 
 
     $(".post-description .post_box-desc .post_content .read-more").click(function(){
-      $(this).parents(".post_content").addClass("show-readmore");
+      $(".post-description .post_box-desc .post_content span.text").removeClass("text-height");
       $(this).hide();
     });
 
