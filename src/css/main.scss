@@ -41,7 +41,7 @@ main {
     flex-wrap: wrap;
   }
   &.container-fluid{
-    max-width: 1440px;
+    max-width: 1440px !important;
   }
   .left-sidebar {
     width: 320px;

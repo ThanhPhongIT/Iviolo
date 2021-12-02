@@ -253,7 +253,7 @@ header {
   left: 0;
   width: 100%; }
   header .container-fluid {
-    padding: 11px 32px 11px 16px;
+    padding: 11px 32px 11px 16px !important;
     max-width: 1440px; }
     @media (max-width: 426px) {
       header .container-fluid {
@@ -3243,7 +3243,7 @@ main {
     main {
       flex-wrap: wrap; } }
   main.container-fluid {
-    max-width: 1440px; }
+    max-width: 1440px !important; }
   main .left-sidebar {
     width: 320px;
     position: fixed;

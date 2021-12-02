@@ -12,7 +12,7 @@ header {
   left: 0;
   width: 100%;
   .container-fluid {
-    padding: 11px 32px 11px 16px;
+    padding: 11px 32px 11px 16px !important;
     max-width: 1440px;
     @include mobile{
       padding: 11px 16px;
