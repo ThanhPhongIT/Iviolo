@@ -2701,16 +2701,18 @@ span#slider-range-value1, span#slider-range-value2 {
 #modalViewPost .modal-dialog.modal-lg {
   max-width: 100% !important; }
 
-#modalViewPost .modal-dialog {
-  margin: 0; }
-  #modalViewPost .modal-dialog .modal-content {
-    border: none; }
-    #modalViewPost .modal-dialog .modal-content .view-post .post-author {
-      padding-left: 16px; }
-    #modalViewPost .modal-dialog .modal-content .view-post .author_last-time {
-      display: block !important; }
-    #modalViewPost .modal-dialog .modal-content .view-post .post-description {
-      padding-top: 0; }
+#modalViewPost {
+  padding-right: 0 !important; }
+  #modalViewPost .modal-dialog {
+    margin: 0; }
+    #modalViewPost .modal-dialog .modal-content {
+      border: none; }
+      #modalViewPost .modal-dialog .modal-content .view-post .post-author {
+        padding-left: 16px; }
+      #modalViewPost .modal-dialog .modal-content .view-post .author_last-time {
+        display: block !important; }
+      #modalViewPost .modal-dialog .modal-content .view-post .post-description {
+        padding-top: 0; }
 
 @media (min-width: 992px) {
   .modal-lg, .modal-xl {
