@@ -791,7 +791,8 @@ span#slider-range-value1, span#slider-range-value2 {
   width: 610px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 100000; }
+  z-index: 100000;
+  padding-right: 0 !important; }
   @media (max-width: 426px) {
     #createPostModal {
       width: 100vw;
@@ -836,6 +837,7 @@ span#slider-range-value1, span#slider-range-value2 {
 #modalActionPost {
   z-index: 10000000;
   width: 610px;
+  padding-right: 0 !important;
   left: 50%;
   transform: translateX(-50%); }
   @media (max-width: 426px) {
@@ -872,7 +874,8 @@ span#slider-range-value1, span#slider-range-value2 {
   width: 544px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 100000; }
+  z-index: 100000;
+  padding-right: 0 !important; }
   #modalNotMember .close {
     position: absolute;
     right: 12px;
@@ -953,7 +956,8 @@ span#slider-range-value1, span#slider-range-value2 {
   width: 1240px !important;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 100000; }
+  z-index: 100000;
+  padding-right: 0 !important; }
   #modalTranslate .modal-content {
     border-radius: 16px;
     width: 1240px; }
@@ -989,6 +993,7 @@ span#slider-range-value1, span#slider-range-value2 {
     transform: translateX(-50%); }
 
 #modalSchedule {
+  padding-right: 0 !important;
   width: 544px;
   left: 50%;
   z-index: 100000;
@@ -2807,7 +2812,8 @@ span#slider-range-value1, span#slider-range-value2 {
     transform: translateY(-50%);
     z-index: 2;
     height: 100%;
-    width: 72px;
+    width: 25px;
+    height: 25px;
     border: none;
     background: none;
     display: flex;
@@ -3234,6 +3240,12 @@ span#slider-range-value1, span#slider-range-value2 {
 .container {
   width: 100%;
   max-width: 1440px; }
+
+.var-w-prev {
+  content: url("../images/icon-carousel-prev.png"); }
+
+.var-w-next {
+  content: url("../images/icon-carousel-next.png"); }
 
 main {
   display: flex;

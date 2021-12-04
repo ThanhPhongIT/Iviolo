@@ -10,9 +10,9 @@ $(document).ready(function(){
     slidesToShow: 1,
     variableWidth: true,
     prevArrow:
-      '<button class="slide-arrow slick-prev"><img src="images/icon-carousel-prev.png"></button>',
+      '<button class="slide-arrow slick-prev var-w-prev"></button>',
     nextArrow:
-      '<button class="slide-arrow slick-next"><img src="images/icon-carousel-next.png"></button>',
+      '<button class="slide-arrow slick-next var-w-next"></button>',
   });
   $('.slick-next').on('mouseover',function(){
     $(".variable-width").slick('slickNext');
@@ -31,7 +31,14 @@ $(document).ready(function(){
     prevArrow:
       '<button class="slide-arrow slick-prev"><i class="fas fa-chevron-left"></i></button>',
     nextArrow:
-      '<button class="slide-arrow slick-next"><i class="fas fa-chevron-right"></i></button>',
+      '<button class="slide-arrow slick-next "><i class="fas fa-chevron-right"></i></button>',
+  });
+  // $('#modalViewPost .view-post_box-img .slider-for .box-img  img').map((res) =>{
+  //   console.log(res.attr('src'));
+  // } );
+  $('.slider-for').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    const currentImg = $('#modalViewPost .view-post_box-img .slider-for .box-img  img')[currentSlide];
+    $('#modalViewPost .view-post_box-txt .post_content').text(currentImg.getAttribute("description"))
   });
   $(".slider-x").slick({
     slidesToShow: 1,

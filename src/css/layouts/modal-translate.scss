@@ -3,6 +3,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 100000;
+  padding-right: 0 !important;
   .modal-content {
     border-radius: 16px;
     width: 1240px;

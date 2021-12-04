@@ -1,6 +1,7 @@
 #modalActionPost {
   z-index: 10000000;
   width: 610px;
+  padding-right: 0 !important;
   @include mobile {
    width: 343px;
   }

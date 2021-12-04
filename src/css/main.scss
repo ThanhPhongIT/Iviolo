@@ -33,6 +33,15 @@ a {
   width: 100%;
   max-width: 1440px;
 }
+
+.var-w-prev{
+    content:url("../images/icon-carousel-prev.png");
+}
+.var-w-next{
+  
+  content:url("../images/icon-carousel-next.png");
+
+}
 main {
   display: flex;
   justify-content: space-between;
