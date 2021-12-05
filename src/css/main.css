@@ -2706,6 +2706,9 @@ span#slider-range-value1, span#slider-range-value2 {
   .modal-lg, .modal-xl {
     max-width: 100%; } }
 
+.modal-open .modal {
+  padding: 0 !important; }
+
 .comment {
   padding: 16px 0 14px 0;
   border-bottom: 1px solid #C8CCD9;

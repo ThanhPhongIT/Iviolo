@@ -50,7 +50,23 @@ $(document).ready(function(){
     focusOnSelect: true,
     lazyLoad: 'ondemand',
     prevArrow: '<button class="slide-arrow slick-prev"><i class="fas fa-chevron-left"></i></button>',
-    nextArrow: '<button class="slide-arrow slick-next"><i class="fas fa-chevron-right"></i></button>'
+    nextArrow: '<button class="slide-arrow slick-next"><i class="fas fa-chevron-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 4000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   });          
 
   // end custom button slider post
@@ -128,7 +144,8 @@ $(document).ready(function(){
 
 
     $(".post-description .post_box-desc .post_content .read-more").click(function(){
-      $(".post-description .post_box-desc .post_content span.text").removeClass("text-height");
+      $(this).parent(".post_content").find('span.text').removeClass("text-height");
+      // $(".post-description .post_box-desc .post_content span.text").removeClass("text-height");
       $(this).hide();
     });
 
