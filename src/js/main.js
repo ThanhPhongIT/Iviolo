@@ -1,6 +1,5 @@
 
 $(document).ready(function(){
-
   // start custom button slider post
   $('.variable-width').slick({
     dots: false,
