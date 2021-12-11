@@ -1,63 +1,136 @@
 .comment {
-    padding: 16px 0 14px 0;
-    border-bottom: 1px solid #C8CCD9;
-    border-top: 1px solid #C8CCD9;
-    margin-top: 12px;
+  padding: 16px 0 14px 0;
+
+  border-top: 1px solid #c8ccd9;
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+  &.active {
     display: flex;
-    flex-wrap: wrap;
-    display: none;
-    &.active{
+  }
+  .avatar {
+    width: 42px;
+  }
+  .box-comment {
+    width: calc(100% - 42px);
+    padding-left: 16px;
+    border-bottom: 1px solid #c8ccd9;
+    padding-bottom: 15px;
+    textarea {
+      width: 200px;
+      resize: none;
+      overflow: auto !important;
+      height: 60px;
+      width: 100%;
+      margin-bottom: 12px;
+      @include mobile {
+        font-size: 14px;
+        line-height: 15px;
+      }
+    }
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .upload-file {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px;
+        .box-img {
+          cursor: pointer;
+          label {
+            cursor: pointer;
+          }
+          #upload-image {
+            display: none;
+          }
+        }
+      }
+      .btn-submit {
+        button {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 19px;
+          color: #ffffff;
+          padding: 7px 21px;
+          background: #1ecbc1;
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+  .box-list-comment {
+    .show-more {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      /* Color 2 */
+
+      color: #969eb4;
+    }
+    ul {
+      li {
+        list-style: none;
         display: flex;
-    }
-    .avatar{
-        width: 42px;
-    }
-    .box-comment {
-        width: calc(100% - 42px);
-        padding-left: 16px;
-        input{
-            width: 100%;
-            height: 42px;
-            margin-bottom: 12px;
-            @include mobile{
-                font-size: 14px;
-                line-height: 15px;
-            }
+        align-items: flex-start;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .avatar {
+          margin-right: 30px;
         }
-        .option{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .upload-file{
-                display: grid;
-                grid-template-columns: repeat(3,1fr);
-                grid-gap: 24px;
-                .box-img{
-                    cursor: pointer;
-                    label{
-                        cursor: pointer;
-                    }
-                    #upload-image{
-                        display: none;
-                    }
-                }
+        .comment-content {
+          .text {
+            background: #f2f3f7;
+            border-radius: 12px;
+            margin-bottom: 8px;
+            padding: 12px 18px 18px;
+
+            .name {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+
+              /* Black */
+
+              color: #2a2c34;
             }
-            .btn-submit{
-                button{
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 19px;
-                    color: #FFFFFF;
-                    padding: 7px 21px;
-                    background: #1ECBC1;
-                    border-radius: 16px;
-                }
+            .des {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 19px;
+              height: auto !important;
+              color: #7b7b7b;
             }
+            span.read-more-cmt {
+              color: #1ecbc1;
+              font-size: 14px;
+              cursor: pointer;
+            }
+            .text-height {
+              -webkit-line-clamp: 2;
+              height: 37px !important;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
+          }
         }
+      }
     }
+  }
 }
-.view-post{
-    .comment{
-        display: flex;
-    }
+.view-post {
+  .comment {
+    display: flex;
+  }
 }

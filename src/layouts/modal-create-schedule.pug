@@ -1,0 +1,22 @@
+#modalCreateSchedule.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+	.modal-dialog.modal-lg.modal-dialog-centered(role='document')
+		.modal-content
+			.modal-header
+				h5.modal-title Create schedule
+				button.close(type='button' data-dismiss='modal' aria-label='Close')
+					span(aria-hidden='true')
+						img(src="./images/close-grey.svg", alt="")
+			.modal-body
+				.date 
+					label Date
+					input(type="date")
+				.time-range 
+					.time 
+						label Time 
+						input(type="time" placeholder="Checkin")
+					.time 
+						label Time 
+						input(type="time"  placeholder="Checkout")
+				.info
+					textarea(name="", placeholder="Enter content...", cols="30", rows="10") 
+				button.post(data-dismiss='modal') Create

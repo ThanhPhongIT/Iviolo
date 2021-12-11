@@ -1,0 +1,41 @@
+.wrapper-create-schedule {
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	padding: 40px 0 23px 0;
+	border-bottom: 0.6px solid #C8CCD9;
+    .list {
+      a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 21px;
+        /* identical to box height */
+
+        /* Color main */
+
+        color: #1ecbc1;
+      }
+    }
+	.end{
+		display: flex;
+		align-items: center;
+		font-style: normal;
+		cursor: pointer;
+font-weight: 600;
+font-size: 16px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: right;
+
+/* Color 2 */
+
+color: #969EB4;
+img{
+	margin-right: 9px;
+}
+	}
+  }
+}

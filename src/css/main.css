@@ -1384,6 +1384,266 @@ span#slider-range-value1, span#slider-range-value2 {
 .box-search.active .form-search {
   display: block !important; }
 
+.card-schedule {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  /* White */
+  background: #ffffff;
+  /* Color 4 */
+  border: 1px solid #eff8fe;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 16px; }
+  .card-schedule .left {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2a2c34; }
+  .card-schedule .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px; }
+    .card-schedule .head .date {
+      display: flex;
+      align-items: center; }
+      .card-schedule .head .date .right {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #676262;
+        margin-right: 12px !important; }
+    .card-schedule .head .action img {
+      padding-left: 10px;
+      cursor: pointer; }
+  .card-schedule .time {
+    display: flex;
+    align-items: center;
+    padding-bottom: 19px; }
+    .card-schedule .time .right {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      color: #676262;
+      margin-right: 12px !important; }
+    .card-schedule .time span {
+      margin: 0 15px; }
+  .card-schedule .des .heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #676262;
+    padding-bottom: 16px; }
+  .card-schedule .des .cont {
+    display: flex;
+    align-items: center; }
+    .card-schedule .des .cont img {
+      width: 64px;
+      height: 64px;
+      margin-right: 21px; }
+    .card-schedule .des .cont .content .title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      /* identical to box height */
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+      padding-bottom: 10px; }
+    .card-schedule .des .cont .content .sub {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 15px;
+      /* identical to box height */
+      /* Color 2 */
+      color: #969EB4; }
+
+#modalCreateSchedule {
+  padding-right: 0 !important;
+  width: 544px;
+  left: 50%;
+  z-index: 100000;
+  transform: translateX(-50%);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  color: #1ecbc1;
+  border: none; }
+  @media (max-width: 426px) {
+    #modalCreateSchedule {
+      width: 343px; } }
+  #modalCreateSchedule input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    background: url(../../images/icon-datepick.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    border-width: thin; }
+  #modalCreateSchedule input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    background: url(../../images/icon-time.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    border-width: thin; }
+  #modalCreateSchedule .modal-content {
+    border-radius: 16px; }
+    #modalCreateSchedule .modal-content .modal-header {
+      border-bottom: none; }
+      #modalCreateSchedule .modal-content .modal-header .modal-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 21px;
+        color: #1ecbc1; }
+        @media (max-width: 426px) {
+          #modalCreateSchedule .modal-content .modal-header .modal-title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 17px; } }
+    #modalCreateSchedule .modal-content .modal-body {
+      padding: 0 45px; }
+      @media (max-width: 426px) {
+        #modalCreateSchedule .modal-content .modal-body {
+          padding: 0 5px; } }
+      #modalCreateSchedule .modal-content .modal-body .date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 454px;
+        height: 46px;
+        background: rgba(200, 204, 217, 0.32);
+        border-radius: 16px;
+        padding: 0 10px; }
+        @media (max-width: 426px) {
+          #modalCreateSchedule .modal-content .modal-body .date {
+            width: 316px;
+            height: 46px; } }
+        #modalCreateSchedule .modal-content .modal-body .date input {
+          width: 400px;
+          background: transparent;
+          height: 100%; }
+          @media (max-width: 426px) {
+            #modalCreateSchedule .modal-content .modal-body .date input {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 16px; } }
+          #modalCreateSchedule .modal-content .modal-body .date input:focus {
+            outline: none; }
+        #modalCreateSchedule .modal-content .modal-body .date label {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 16px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #000000;
+          margin-right: 15px; }
+          @media (max-width: 426px) {
+            #modalCreateSchedule .modal-content .modal-body .date label {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 16px; } }
+      #modalCreateSchedule .modal-content .modal-body .time-range {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 8px 0; }
+        @media (max-width: 426px) {
+          #modalCreateSchedule .modal-content .modal-body .time-range {
+            flex-direction: column;
+            margin-top: 8px; } }
+        #modalCreateSchedule .modal-content .modal-body .time-range .time {
+          background: rgba(200, 204, 217, 0.32);
+          border-radius: 16px;
+          width: 220px;
+          height: 46px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 10px; }
+          @media (max-width: 426px) {
+            #modalCreateSchedule .modal-content .modal-body .time-range .time {
+              width: 316px;
+              height: 46px;
+              margin-bottom: 8px;
+              justify-content: flex-start; } }
+          #modalCreateSchedule .modal-content .modal-body .time-range .time label {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #000000;
+            margin-right: 15px; }
+            @media (max-width: 426px) {
+              #modalCreateSchedule .modal-content .modal-body .time-range .time label {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px; } }
+          #modalCreateSchedule .modal-content .modal-body .time-range .time input {
+            background: transparent;
+            width: 150px; }
+            @media (max-width: 426px) {
+              #modalCreateSchedule .modal-content .modal-body .time-range .time input {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                width: 255px; } }
+            #modalCreateSchedule .modal-content .modal-body .time-range .time input:focus {
+              outline: none; }
+    #modalCreateSchedule .modal-content .info textarea {
+      width: 454px;
+      height: 86px;
+      background: rgba(200, 204, 217, 0.32);
+      border-radius: 16px;
+      padding: 17px;
+      resize: none; }
+      #modalCreateSchedule .modal-content .info textarea:focus {
+        border: none !important; }
+    #modalCreateSchedule .modal-content button.post {
+      width: 448px;
+      height: 46px;
+      left: 496px;
+      top: 554px;
+      background: #1ecbc1;
+      border-radius: 29px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: -0.031314px;
+      margin-top: 32px;
+      margin-bottom: 28px;
+      color: #ffffff; }
+      #modalCreateSchedule .modal-content button.post:focus {
+        outline: none; }
+      @media (max-width: 426px) {
+        #modalCreateSchedule .modal-content button.post {
+          width: 316px;
+          height: 46px; } }
+
 .wrapper-login {
   width: 100vw;
   height: 100vh;
@@ -2723,10 +2983,12 @@ span#slider-range-value1, span#slider-range-value2 {
   .modal-lg, .modal-xl {
     max-width: 100%; } }
 
+.modal-open .modal {
+  padding: 0 !important; }
+
 .comment {
   padding: 16px 0 14px 0;
-  border-bottom: 1px solid #C8CCD9;
-  border-top: 1px solid #C8CCD9;
+  border-top: 1px solid #c8ccd9;
   margin-top: 12px;
   display: flex;
   flex-wrap: wrap;
@@ -2737,13 +2999,18 @@ span#slider-range-value1, span#slider-range-value2 {
     width: 42px; }
   .comment .box-comment {
     width: calc(100% - 42px);
-    padding-left: 16px; }
-    .comment .box-comment input {
+    padding-left: 16px;
+    border-bottom: 1px solid #c8ccd9;
+    padding-bottom: 15px; }
+    .comment .box-comment textarea {
+      width: 200px;
+      resize: none;
+      overflow: auto !important;
+      height: 60px;
       width: 100%;
-      height: 42px;
       margin-bottom: 12px; }
       @media (max-width: 426px) {
-        .comment .box-comment input {
+        .comment .box-comment textarea {
           font-size: 14px;
           line-height: 15px; } }
     .comment .box-comment .option {
@@ -2764,10 +3031,58 @@ span#slider-range-value1, span#slider-range-value2 {
         font-weight: normal;
         font-size: 14px;
         line-height: 19px;
-        color: #FFFFFF;
+        color: #ffffff;
         padding: 7px 21px;
-        background: #1ECBC1;
+        background: #1ecbc1;
         border-radius: 16px; }
+  .comment .box-list-comment .show-more {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* Color 2 */
+    color: #969eb4; }
+  .comment .box-list-comment ul li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    .comment .box-list-comment ul li .avatar {
+      margin-right: 30px; }
+    .comment .box-list-comment ul li .comment-content .text {
+      background: #f2f3f7;
+      border-radius: 12px;
+      margin-bottom: 8px;
+      padding: 12px 18px 18px; }
+      .comment .box-list-comment ul li .comment-content .text .name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        /* Black */
+        color: #2a2c34; }
+      .comment .box-list-comment ul li .comment-content .text .des {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        height: auto !important;
+        color: #7b7b7b; }
+      .comment .box-list-comment ul li .comment-content .text span.read-more-cmt {
+        color: #1ecbc1;
+        font-size: 14px;
+        cursor: pointer; }
+      .comment .box-list-comment ul li .comment-content .text .text-height {
+        -webkit-line-clamp: 2;
+        height: 37px !important;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden; }
 
 .view-post .comment {
   display: flex; }
@@ -3113,6 +3428,35 @@ span#slider-range-value1, span#slider-range-value2 {
     margin-top: 102px; }
   .wrapper-my-post .content-list {
     margin-top: 100px; }
+
+.wrapper-create-schedule .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0 23px 0;
+  border-bottom: 0.6px solid #C8CCD9; }
+  .wrapper-create-schedule .top .list a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 21px;
+    /* identical to box height */
+    /* Color main */
+    color: #1ecbc1; }
+  .wrapper-create-schedule .top .end {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: right;
+    /* Color 2 */
+    color: #969EB4; }
+    .wrapper-create-schedule .top .end img {
+      margin-right: 9px; }
 
 .wrapper-saved-location .content-list {
   margin-top: 50px;

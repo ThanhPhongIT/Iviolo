@@ -1,0 +1,199 @@
+#modalCreateSchedule {
+  padding-right: 0 !important;
+  @include mobile {
+    width: 343px;
+  }
+  width: 544px;
+  left: 50%;
+  z-index: 100000;
+  transform: translateX(-50%);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  color: #1ecbc1;
+  border: none;
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    background: url(../../images/icon-datepick.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    border-width: thin;
+  }
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    background: url(../../images/icon-time.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    border-width: thin;
+  }
+  .modal-content {
+    border-radius: 16px;
+    .modal-header {
+      .modal-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 21px;
+        color: #1ecbc1;
+        @include mobile {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 17px;
+        }
+      }
+
+      border-bottom: none;
+    }
+    .modal-body {
+      padding: 0 45px;
+      @include mobile {
+        padding: 0 5px;
+      }
+      .date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 454px;
+        height: 46px;
+        background: rgba(200, 204, 217, 0.32);
+        border-radius: 16px;
+        padding: 0 10px;
+        @include mobile {
+          width: 316px;
+          height: 46px;
+        }
+        input {
+          width: 400px;
+          background: transparent;
+          height: 100%;
+          @include mobile {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        label {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 16px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #000000;
+          margin-right: 15px;
+          @include mobile {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
+      .time-range {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 8px 0;
+        @include mobile {
+          flex-direction: column;
+          margin-top: 8px;
+        }
+        .time {
+          background: rgba(200, 204, 217, 0.32);
+          border-radius: 16px;
+          width: 220px;
+          height: 46px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 10px;
+          @include mobile {
+            width: 316px;
+            height: 46px;
+            margin-bottom: 8px;
+            justify-content: flex-start;
+          }
+          label {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #000000;
+            margin-right: 15px;
+            @include mobile {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+          input {
+            background: transparent;
+            width: 150px;
+            @include mobile {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 16px;
+              width: 255px;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+    .info {
+      textarea {
+        width: 454px;
+        height: 86px;
+        background: rgba(200, 204, 217, 0.32);
+        border-radius: 16px;
+        padding: 17px;
+		resize: none;
+		&:focus{
+			border: none !important;
+		}
+      }
+    }
+    button.post {
+      width: 448px;
+      height: 46px;
+      left: 496px;
+      top: 554px;
+      background: #1ecbc1;
+      border-radius: 29px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: -0.031314px;
+      margin-top: 32px;
+      margin-bottom: 28px;
+      color: #ffffff;
+      &:focus {
+        outline: none;
+      }
+      @include mobile {
+        width: 316px;
+        height: 46px;
+      }
+    }
+  }
+}

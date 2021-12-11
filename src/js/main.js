@@ -57,6 +57,22 @@ $(document).ready(function(){
     lazyLoad: 'ondemand',
     prevArrow: '<button class="slide-arrow slick-prev"><i class="fas fa-chevron-left"></i></button>',
     nextArrow: '<button class="slide-arrow slick-next"><i class="fas fa-chevron-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 4000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   });          
 
   // end custom button slider post
@@ -68,9 +84,25 @@ $(document).ready(function(){
 
   // end toggle form search
 
+
   // start toggle form comment
   $(".post_comment button").click(function(){
     $('.comment').toggleClass("active");
+    var heightComment = $(".comment .box-list-comment .comment-content .text .des").height();
+  if(heightComment > 40){
+    $(".comment .box-list-comment .comment-content .text .des").addClass("text-height");
+    $(".comment .box-list-comment .comment-content .text .des").css("display", "inline-block");
+
+
+    $(".comment .box-list-comment .comment-content .text .read-more-cmt").click(function(){
+      console.log($(this).parent(""));
+      $(this).parent(".text").find('.des').removeClass("text-height");
+      // $(".post-description .post_box-desc .post_content span.text").removeClass("text-height");
+      $(this).hide();
+    });
+
+  }
+  console.log(heightComment);
   });
 
   // end toggle form comment
@@ -134,12 +166,13 @@ $(document).ready(function(){
 
 
     $(".post-description .post_box-desc .post_content .read-more").click(function(){
-      $(".post-description .post_box-desc .post_content span.text").removeClass("text-height");
+      $(this).parent(".post_content").find('span.text').removeClass("text-height");
+      // $(".post-description .post_box-desc .post_content span.text").removeClass("text-height");
       $(this).hide();
     });
 
   }
-  console.log(heightPostContentSpan);
+  
   // $(".post-description .post_box-desc .post_content span.text").click(function(){
   //   alert("Height of div: " + $("div").height());
   // });

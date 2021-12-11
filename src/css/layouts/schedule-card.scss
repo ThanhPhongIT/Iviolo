@@ -1,0 +1,111 @@
+.card-schedule {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  /* White */
+
+  background: #ffffff;
+  /* Color 4 */
+
+  border: 1px solid #eff8fe;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 16px;
+  
+  .left {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2a2c34;
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    .date {
+      display: flex;
+      align-items: center;
+      .right {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #676262;
+        margin-right: 12px !important;
+      }
+    }
+    .action {
+      img {
+        padding-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .time {
+    display: flex;
+    align-items: center;
+    padding-bottom: 19px;
+    .right {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      color: #676262;
+      margin-right: 12px !important;
+    }
+	span{
+		margin: 0 15px;
+	}
+  }
+  .des {
+    .heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 19px;
+      text-transform: capitalize;
+      color: #676262;
+	  padding-bottom: 16px;
+    }
+	.cont{
+		display: flex;
+		align-items: center;
+		img{
+			width: 64px;
+			height: 64px;
+			margin-right: 21px;
+		}
+		.content{
+			.title{
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 22px;
+				
+				/* identical to box height */
+				
+				display: flex;
+				align-items: center;
+				text-align: center;
+				
+				color: #000000;
+				padding-bottom: 10px;
+			}
+			.sub{
+				font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 15px;
+/* identical to box height */
+
+
+/* Color 2 */
+
+color: #969EB4;
+			}
+		}
+	}
+  }
+}

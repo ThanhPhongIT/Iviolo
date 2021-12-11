@@ -1,13 +1,14 @@
-.wrapper-my-post
+.wrapper-create-schedule
 	.top 
-		ul.list 
-			li.item
-				a.active(href="#") Create schedule
+		.list 
+			a.active(href="#") Your schedule
+		.end(data-toggle='modal' data-target='#modalCreateSchedule')
+			img(src="./images/create-schedule.png", alt="")
+			p Create new schedule
 	.content-list
 		.row 
-			.col-4
-				include ../../layouts/place-card.pug
-			.col-4
-				include ../../layouts/place-card.pug
-			.col-4
-				include ../../layouts/place-card.pug
+			.col-md-6.col-12
+				include ../../layouts/schedule-card.pug
+			.col-md-6.col-12
+				include ../../layouts/schedule-card.pug
+include ../../layouts/modal-create-schedule.pug

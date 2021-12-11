@@ -154,46 +154,96 @@
         </div>
       </ul>
       <div class="main-profile"> 
-        <div class="wrapper-my-post">
+        <div class="wrapper-create-schedule">
           <div class="top"> 
-            <ul class="list"> 
-              <li class="item"><a class="active" href="#">Create schedule</a></li>
-            </ul>
+            <div class="list"> <a class="active" href="#">Your schedule</a></div>
+            <div class="end" data-toggle="modal" data-target="#modalCreateSchedule"><img src="./images/create-schedule.png" alt="">
+              <p>Create new schedule</p>
+            </div>
           </div>
           <div class="content-list">
             <div class="row"> 
-              <div class="col-4">
-                <div class="place-card"><img src="./images/profile/place-card.jpg" alt="">
-                  <div class="content"> 
-                    <div class="heading">Explore our Seoul.</div>
-                    <div class="bottom"> 
-                      <div class="left">200 hotels, 345 local flights and 234 bus providers</div>
-                      <div class="button">Explore</div>
+              <div class="col-md-6 col-12">
+                <div class="card-schedule">
+                  <div class="head">
+                    <div class="date">
+                      <div class="right">Date: </div>
+                      <div class="left">12/22/2021</div>
+                    </div>
+                    <div class="action"> <img src="./images/feather_edit.png" alt=""><img src="./images/fluent_delete-28-filled.png" alt=""></div>
+                  </div>
+                  <div class="time"> 
+                    <div class="right">Time checkin:</div>
+                    <div class="left">08:32</div><span>~</span>
+                    <div class="right">Time checkout:</div>
+                    <div class="left">18:15</div>
+                  </div>
+                  <div class="des"> 
+                    <div class="heading">Destination</div>
+                    <div class="cont"><img src="./images/packet-sale.png" alt="">
+                      <div class="content"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="sub">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="place-card"><img src="./images/profile/place-card.jpg" alt="">
-                  <div class="content"> 
-                    <div class="heading">Explore our Seoul.</div>
-                    <div class="bottom"> 
-                      <div class="left">200 hotels, 345 local flights and 234 bus providers</div>
-                      <div class="button">Explore</div>
+              <div class="col-md-6 col-12">
+                <div class="card-schedule">
+                  <div class="head">
+                    <div class="date">
+                      <div class="right">Date: </div>
+                      <div class="left">12/22/2021</div>
+                    </div>
+                    <div class="action"> <img src="./images/feather_edit.png" alt=""><img src="./images/fluent_delete-28-filled.png" alt=""></div>
+                  </div>
+                  <div class="time"> 
+                    <div class="right">Time checkin:</div>
+                    <div class="left">08:32</div><span>~</span>
+                    <div class="right">Time checkout:</div>
+                    <div class="left">18:15</div>
+                  </div>
+                  <div class="des"> 
+                    <div class="heading">Destination</div>
+                    <div class="cont"><img src="./images/packet-sale.png" alt="">
+                      <div class="content"> 
+                        <div class="title">Hotel Casa Camper</div>
+                        <div class="sub">Carer d’Elisabet, 11, 09001 Barcel....</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="place-card"><img src="./images/profile/place-card.jpg" alt="">
-                  <div class="content"> 
-                    <div class="heading">Explore our Seoul.</div>
-                    <div class="bottom"> 
-                      <div class="left">200 hotels, 345 local flights and 234 bus providers</div>
-                      <div class="button">Explore</div>
-                    </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalCreateSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Create schedule</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="./images/close-grey.svg" alt=""></span></button>
+              </div>
+              <div class="modal-body">
+                <div class="date"> 
+                  <label>Date</label>
+                  <input type="date">
+                </div>
+                <div class="time-range"> 
+                  <div class="time"> 
+                    <label>Time </label>
+                    <input type="time" placeholder="Checkin">
+                  </div>
+                  <div class="time"> 
+                    <label>Time </label>
+                    <input type="time" placeholder="Checkout">
                   </div>
                 </div>
+                <div class="info">
+                  <textarea name="" placeholder="Enter content..." cols="30" rows="10"> </textarea>
+                </div>
+                <button class="post" data-dismiss="modal">Create</button>
               </div>
             </div>
           </div>
